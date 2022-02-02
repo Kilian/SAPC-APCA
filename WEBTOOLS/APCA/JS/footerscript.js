@@ -108,6 +108,7 @@ const scoreColor = ["c00", "b60", "9a7900", "08a", "008d00", "a0e"];
 
 const normalColspan = ""; // colspan="1"
 const simpleColspan = 'colspan="2"';
+const wideColspan = 'colspan="3"';
 const mobileColspan = 'colspan="2"';
 
 let mode = "simple"; // 'normal' 'simple' 'mobile'
@@ -133,7 +134,7 @@ const scoreTextArraySimple = [
   '<span class="fs35 fw6">1</span>',
   '<span class="fs35 fw6">2</span>',
   '<span class="fs35 fw6">3</span>',
-  '<span class="fs35 fw6">4</span>',
+  '',
   '<span class="fs14 fw6">PREF</span>',
   '<span class="fs12">LEVEL</span>'
 ];
@@ -143,7 +144,7 @@ const scoreTextArrayMobile = [
   '<span class="fs20 fw7">1</span>',
   '<span class="fs20 fw7">2</span>',
   '<span class="fs20 fw7">3</span>',
-  '<span class="fs20 fw7">4</span>',
+  '',
   '<span class="dib fs11 fw5" style="font-family: \'Barlow Condensed\';">PREF</span>',
   '<span class="fs08 fw05">SCORE</span>'
 ];
@@ -721,10 +722,6 @@ function testContrast(midAdjust = false) {
       if (mode === "simple") {
         w = 2;
         modeWeightArrayLen = 8;
-        rowString =
-          '<th>' +
-          scoreTextArraySimple[s] +
-          "</th>";
       } else if (mode === "mobile") {
         w = 2;
         modeWeightArrayLen = 8;
@@ -764,7 +761,7 @@ function testContrast(midAdjust = false) {
               sampleText = "SampleText";
               minimumText = "MIN";
             } else if (mode === "simple") {
-              modeColspan = simpleColspan;
+              modeColspan = w===4 ? wideColspan : simpleColspan;
               fontLevel79 = 112;
               fontLevel39 = 96;
               fontLevel28 = 52;
