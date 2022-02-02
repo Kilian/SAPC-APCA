@@ -101,13 +101,11 @@ header.largeHeader {
 }
 header.smallHeader {
   width: 100%;
-  min-height: 10px;
-  max-height: 20px;
-  padding-top: 40px;
+  padding:0;
+  height:70px;
   background-color: #30a;
   background-image: url("https://myndex.com/images/myndexfoot7.png");
-  background-position: top;
-  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
 }
 header.sticky {
@@ -195,7 +193,7 @@ h6,
 .h5,
 .h6 {
   color: #30a;
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -2766,10 +2764,6 @@ div.examples {
 }
 
 @media (max-width: 1024.99px) {
-  header.smallHeader {
-    width: 100vw;
-    padding-top: 4%;
-  }
   header.sticky {
     left: 0;
   }

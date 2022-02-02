@@ -1,15 +1,19 @@
 .wrapper {
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 .contrastChart.pie {
   margin: 3rem auto 0;
 }
 
+.conformScore tr:first-child th.tableTitle {
+  vertical-align: bottom;
+}
 .conformScore #tableScore4 td {
   padding: 1rem 0.5rem 0;
   vertical-align: top;
   text-align: left;
+  border: 1px solid rgb(230, 230, 230);
 }
 .innerwrapper {
   position: relative;

@@ -135,9 +135,16 @@ The content on this page is PROPRIETARY AND NOT LICENSED FOR FURTHER USE. -->
   <body id="bodyid" onload="setBrowser(); getColorURL();">
     <header class="smallHeader">&nbsp;</header>
     <main class="wrapper">
-      <h1 class="mastHead" style="">APCA Contrast Calculator</h1>
+      <h1 class="mastHead">APCA Contrast Calculator</h1>
+      <p style="text-align:center;line-height:1;margin:0">
+        Select text and background colors to check their APCA L<sup
+          style="margin: 0 0 -0.15em -0.25em"
+          >c</sup
+        >
+        score.
+      </p>
 
-      <div style="position: relative; Margin: 0.25em auto;">
+      <div style="position: relative; margin: 0.25em auto;">
         <div id="null01" class="contrastChart pie">
           <table id="tableSamples" class="conformScore fs14">
             <tr>
@@ -163,12 +170,15 @@ The content on this page is PROPRIETARY AND NOT LICENSED FOR FURTHER USE. -->
                 onkeypress="if(event.keyCode==32||event.keyCode==13){swapColors()};"
                 onclick="swapColors()"
               >
-                <span style="font-size: 1em; letter-spacing: 0.1em;"
-                  >APCA<span style="font-size: 0.6em;  letter-spacing: 0;">
-                    <br />contrast<br />
+                <span style="font-size: 1.4em;font-weight:600">
+                  APCA
+                  <span
+                    style="font-size: 0.6em;line-height:1.25;display: block;"
+                  >
+                    contrast
                   </span>
                   <span
-                    style="font-family: 'Barlow Condensed'; font-size: 0.95em;font-weight: bold; line-height: 1.1;"
+                    style="font-family: 'Barlow Condensed'; font-size: 0.95em;font-weight: bold; line-height: 0.5;"
                     id="contrastResultTable"
                   >
                   </span>
@@ -342,8 +352,8 @@ The content on this page is PROPRIETARY AND NOT LICENSED FOR FURTHER USE. -->
             </a>
             and let us know in the
             <a href="https://github.com/Myndex/SAPC-APCA/discussions">
-              discussions forum
-            </a>.
+              discussions forum </a
+            >.
           </p>
         </div>
       </div>
