@@ -125,6 +125,7 @@ The content on this page is PROPRIETARY AND NOT LICENSED FOR FURTHER USE. -->
 
     <link rel="stylesheet" href="CSS/style.0.1.2-g.css" />
     <link rel="stylesheet" href="CSS/inline-styles.css" />
+    <link rel="stylesheet" href="CSS/new-styles.css" />
 
     <!-- This Page Requires beta 0.1.2-G or greater of the following file. -->
     <script src="JS/DEV.0.1.2.G_SAPCsRGB.js"></script>
@@ -132,16 +133,9 @@ The content on this page is PROPRIETARY AND NOT LICENSED FOR FURTHER USE. -->
   </head>
 
   <body id="bodyid" onload="setBrowser(); getColorURL();">
+    <header class="smallHeader">&nbsp;</header>
     <main class="wrapper">
-      <a
-        href="https://www.myndex.com/WEB/Perception"
-        aria-label="Go Back to Percepton Experiments"
-      >
-        <header class="smallHeader sticky">&nbsp;</header>
-      </a>
-      <br />
-      <br />
-      <h1 class="mastHead" style="">APCA&nbsp;CONTRAST&nbsp;CALCULATOR</h1>
+      <h1 class="mastHead" style="">APCA Contrast Calculator</h1>
 
       <div style="position: relative; Margin: 0.25em auto;">
         <div id="null01" class="contrastChart pie">
@@ -157,7 +151,7 @@ The content on this page is PROPRIETARY AND NOT LICENSED FOR FURTHER USE. -->
               </th>
 
               <th colspan="3" class="tableTitle">
-                <label for="inputTXT">TEXT COLOR</label>
+                <label for="inputTXT">Text color</label>
               </th>
 
               <th
@@ -171,22 +165,18 @@ The content on this page is PROPRIETARY AND NOT LICENSED FOR FURTHER USE. -->
               >
                 <span style="font-size: 1em; letter-spacing: 0.1em;"
                   >APCA<span style="font-size: 0.6em;  letter-spacing: 0;">
-                    <br />CONTRAST<br />
+                    <br />contrast<br />
                   </span>
                   <span
                     style="font-family: 'Barlow Condensed'; font-size: 0.95em;font-weight: bold; line-height: 1.1;"
                     id="contrastResultTable"
                   >
                   </span>
-                  <br />
-                  <span class="helvetiFont" style="line-height: 1;"
-                    >Click To Swap</span
-                  >
                 </span>
               </th>
 
               <th class="tableTitle" colspan="3">
-                <label for="inputBG">BACKGROUND</label>
+                <label for="inputBG">Background color</label>
               </th>
 
               <th class="colorPicker" id="BGpickerWrap" rowspan="2">
@@ -328,11 +318,43 @@ The content on this page is PROPRIETARY AND NOT LICENSED FOR FURTHER USE. -->
       </div>
       <!-- Close Main Interface -->
 
-      <hr />
+      <div class="innerwrapper infobox">
+        <div>
+          <h2 id="accessible-contrast" class="h1Query">
+            Accessible Contrast
+          </h2>
+          <h3 id="font-size-and-weight" class="h3Query">
+            Relative to Font Size and Weight
+          </h3>
 
-      <h2 class="mastHead fs20" style="">APCA BASIC for CONTENT CREATORS</h2>
+          <p>
+            APCA reports contrast as an Lc&nbsp;value (lightness contrast) from
+            <strong>Lc&nbsp;0</strong> to <strong>Lc&nbsp;105+</strong>. For
+            accessibility, consider Lc&nbsp;15 the point of invisibility for
+            many users, and Lc&nbsp;90 is preferred for body text.
+          </p>
+        </div>
+
+        <div class="betanotice">
+          <h3 class="h1Query">APCA W3 is in public beta</h3>
+          <p>
+            We'd love to hear your comments, questions, or concerns—come visit
+            our
+            <a href="https://github.com/Myndex/SAPC-APCA/documentation">
+              GitHub repo
+            </a>
+            and let us know in the
+            <a href="https://github.com/Myndex/SAPC-APCA/discussions">
+              discussions forum
+            </a>.
+          </p>
+        </div>
+      </div>
 
       <div id="demoArea">
+        <h2 id="accessible-contrast">
+          Create a shareable URL
+        </h2>
         <div class="centered ">
           <label class="tac por" for="URLresult">URL:&nbsp;&nbsp;&nbsp;</label>
           <input
@@ -349,10 +371,11 @@ The content on this page is PROPRIETARY AND NOT LICENSED FOR FURTHER USE. -->
           role="button"
           tabindex="0"
           onkeypress="if(event.keyCode==32||event.keyCode==13){createColorURL('colorURL')};"
-          style="width: 95%; margin: 0.5em auto; padding: 0.3em 0.65em;"
+          style="width: 95%; margin: 0.5em auto; padding: 0.15em 0.5em;"
           onclick="createColorURL('colorURL')"
-          >Generate a URL of This Color Pair</a
         >
+          Generate a URL of This Color Pair
+        </a>
 
         <div id="colorWarn" class="" style="">
           <div style="">
@@ -378,1361 +401,1308 @@ The content on this page is PROPRIETARY AND NOT LICENSED FOR FURTHER USE. -->
       </div>
       <!--    ********    Close Demo Area ********    -->
 
-      <img
-        alt="APCA the Revolution will be readable"
-        class=""
-        style="position: relative; left: calc(50% - 455px);"
-        src="images/APCAcolor4.png"
-      />
-
-      <h2 class="mastHead h3Query" style=""><em>APCA W3 PUBLIC BETA</em></h2>
-      <p class="por onWhiteSpace">
-        We'd love to hear your comments, questions, or concerns—come visit our
-        <a href="https://github.com/Myndex/SAPC-APCA/documentation"
-          >GitHub repo</a
-        >
-        and let us know in the
-        <a href="https://github.com/Myndex/SAPC-APCA/discussions"
-          >discussions forum.</a
-        >
-      </p>
-
-      <hr class="clb" style="" />
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-      ></script>
-      <ins
-        class="adsbygoogle"
-        style="display:block; text-align:center;"
-        data-ad-layout="in-article"
-        data-ad-format="fluid"
-        data-ad-client="ca-pub-8528204478975741"
-        data-ad-slot="8819425657"
-      >
-      </ins>
-      <script async>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-      <hr class="clb" style="" />
-
-      <section class="explainer">
-        <h2 id="accessible-contrast" class="h1Query" style="">
-          Accessible Contrast
-        </h2>
-        <h3 id="font-size-and-weight" class="h3Query" style="">
-          Relative to Font Size and Weight
-        </h3>
-
-        <p>
-          APCA reports contrast as an Lc&nbsp;value (lightness contrast) from
-          <strong>Lc&nbsp;0</strong> to <strong>Lc&nbsp;105+</strong>. For
-          accessibility, consider Lc&nbsp;15 the point of invisibility for many
-          users, and Lc&nbsp;90 is preferred for body text.
-        </p>
-
-        <hr />
-        <details>
-          <summary>
-            <span class="twistUp">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="36px"
-                viewBox="0 0 24 24"
-                width="36px"
-                fill="none"
-              >
-                <path d="M0 0h24v24H0V0z" fill="none" />
-                <path
-                  d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8m0-2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13l-4-4h8z"
-                  stroke="#34028b"
-                  fill="#230167"
-                />
-              </svg>
-            </span>
-            <h3
-              style="font-weight: 400;"
-              id="general-guidelines-on-levels"
-              class="h1Query Luv275 pb00 mb00"
-            >
-              General Guidelines
-              <div
-                style="margin: 0; padding: 0; font-style:oblique; font-size: 0.8em;"
-              >
-                For Simple to Use Levels
-              </div>
-            </h3>
-          </summary>
-          <p>
-            These general levels are appropriate for use without reference to
-            the lookup table. The lookup table simply adds additional accuracy,
-            which allows for greater flexibility.
-          </p>
-
-          <ul>
-            <li>
-              <strong>Lc&nbsp;90</strong> • Preferred level for fluent text and
-              columns of body text with a font no smaller than 18px/weight 300
-              or 14px/weight 400 (normal), or non-body text with a font no
-              smaller than 12px. Also a recommended minimum for extremely thin
-              fonts with a minimum of 24px at weight 200. Lc&nbsp;90 is a
-              <em>suggested maximum</em> for
-              <strong>very large and bold fonts</strong> (greater than 36px
-              bold), and large areas of color.
-            </li>
-            <li>
-              <strong>Lc&nbsp;75</strong> • The <em>minimum</em> level for
-              columns of body text with a font no smaller than 24px/300 weight,
-              18px/400, 16px/500 and 14px/700. This level may be used with
-              non-body text with a font no smaller than 15px/400. Also,
-              Lc&nbsp;75 should be considered a minimum for larger for any
-              larger text where readability is important.
-            </li>
-            <li>
-              <strong>Lc&nbsp;60</strong> • The <em>minimum</em> level
-              recommended for content text that is not body, column, or block
-              text. In other words, text you want people to read. The minimums:
-              no smaller than 48px/200, 36px/300, 24px normal weight (400),
-              21px/500, 18px/600, 16px/700 (bold). These values based on the
-              reference font Helvetica. To use these sizes as body text, add
-              Lc&nbsp;15.
-            </li>
-            <li>
-              <strong>Lc&nbsp;45</strong> • The <em>minimum</em> for larger,
-              heavier text (36px normal weight or 24px bold) such as headlines,
-              and large text that should be fluently readabile but is not body
-              text. This is also the minimum for pictograms with fine details,
-              or smaller outline icons.
-            </li>
-            <li>
-              <strong>Lc&nbsp;30</strong> • The <em>absolute minimum</em> for
-              any text not listed above, including text considered as &quot;spot
-              readable&quot;. This includes placeholder text and disabled
-              element text, and some non-content like a copyright bug. This is
-              also the minimum for large/solid semantic &amp; understandable
-              non-text elements such as &quot;mostly solid&quot; icons or
-              pictograms. Generally no less than 4px in its smallest dimension.
-            </li>
-            <li>
-              <strong>Lc&nbsp;15</strong> • The <em>absolute minimum</em> for
-              any non-text that needs to be <em>discernible</em> and
-              differentiable, and is no less than 6px in its smallest dimention.
-              This may include dividers, and in <em>some</em> cases large
-              buttons or thick focus visible outlines, but does
-              <em>not</em> include fine details which have a higher minimum.
-              <strong
-                >Designers should treat anything below this level as
-                invisible</strong
-              >, as it will not be visible for many users. This minimum level
-              should be avoided for any items important to the use,
-              understanding, or interaction of the site.
-            </li>
-          </ul>
-          <p>
-            These define the basic minimum levels, what you might think of as
-            A/AA in the old WCAG&nbsp;2. For the equivelent to AAA, simply
-            increase the contrast values by Lc&nbsp;15.
-          </p>
-        </details>
-        <hr />
-        <details>
-          <summary>
-            <span class="twistUp">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="36px"
-                viewBox="0 0 24 24"
-                width="36px"
-                fill="none"
-              >
-                <path d="M0 0h24v24H0V0z" fill="none" />
-                <path
-                  d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8m0-2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13l-4-4h8z"
-                  stroke="#34028b"
-                  fill="#230167"
-                />
-              </svg>
-            </span>
-            <h3 class="Luv275 fw6 h3Query" style="">
-              NOTES ON FONT SIZE
-            </h3>
-          </summary>
-          <ul>
-            <li>
-              Font sizes listed above assume an x-height ratio of at least 0.52.
-              Font weight is based on highly standardized reference fonts such
-              as Helvetica or Arial. &quot;px&quot; means the CSS reference px,
-              not device pixels. The reference px is defined as 1.278 arc
-              minutes of visual angle.
-            </li>
-            <li>
-              When selecting, or testing, a font size, all that needs to be done
-              is to compare the x-height to the reference.
-              <ul>
-                <li>
-                  For instance, Times New Roman has an x-height ratio of 0.45,
-                  so it needs to be increased about 16% in size.
-                </li>
-              </ul>
-            </li>
-            <li>
-              For font weight, simply set a line of test text in the reference
-              Arial or Helvetical at 400 weight and then below that the same
-              text text in the new font. Try different weights to find the
-              closest match.
-              <ul>
-                <li>
-                  As an example, the font Raleway 400 weight is closest to
-                  Helvetica 300.
-                </li>
-                <li>
-                  So, always add 100 in weight to Raleway to be equivelent.
-                </li>
-                <li>
-                  See
-                  <a
-                    href="https://github.com/Myndex/SAPC-APCA/discussions/28#discussioncomment-1610289"
-                    >this discussion answer</a
-                  >
-                  for more.
-                </li>
-              </ul>
-            </li>
-            <li>
-              Consider the font design as well as the basic size and weight, and
-              the potential impact on readability. See
-              <a
-                href="https://www.researchgate.net/publication/338149302_Evaluating_Fonts_Font_Family_Selection_for_Accessibility_Display_Readability"
-                >this PDF <strong>&quot;Evaluating Fonts&quot;</strong>
-              </a>
-              for general guidance and a comparison of a few dozen fonts for
-              accessibility.
-            </li>
-          </ul>
-        </details>
-
-        <details>
-          <summary>
-            <span class="twistUp">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="36px"
-                viewBox="0 0 24 24"
-                width="36px"
-                fill="none"
-              >
-                <path d="M0 0h24v24H0V0z" fill="none" />
-                <path
-                  d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8m0-2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13l-4-4h8z"
-                  stroke="#34028b"
-                  fill="#230167"
-                />
-              </svg>
-            </span>
-            <h3 id="bridge-pca" class="Luv275 fw6 h3Query" style="">
-              NOTES ON WCAG&nbsp;2 COMPATIBILITY
-            </h3>
-          </summary>
-
-          <p>
-            To use the APCA tool for minimum Bridge-PCA conformance (backwards
-            compatible for WCAG&nbsp;2):
-          </p>
-          <ul>
-            <li><b>90</b> • Lc 90 replaces WCAG <b>7:1</b></li>
-            <li><b>75</b> • Lc 75 replaces WCAG <b>4.5:1</b></li>
-            <li><b>60</b> • Lc 60 replaces WCAG <b>3:1</b></li>
-            <li>
-              <b>WoB</b> • For light text on a darker background, when the text
-              is lighter than <code> #eee </code>, increase the minimum value by
-              Lc 10. The dedicated Bridge-PCA tool takes this into account
-              automatically.
-            </li>
-          </ul>
-
-          <p>
-            <strong>NEW!!</strong> If you need to be backwards compatible, the
-            new Bridge-PCA can help! <a href="/BPCA/">Bridge PCA</a> is
-            backwards compatible with WCAG&nbsp;2, shows contrast as both Lc
-            value, <em>and</em> the traditional WCAG&nbsp;2ratios, but with a
-            twist: The "ratios" shown on Bridge PCA are perceptually accurate!
-          </p>
-          <p>
-            This is possible because Bridge PCA uses APCA technology to generate
-            "ratios" that look and feel very much like those of WCAG 2.
-          </p>
-        </details>
-
-        <hr />
-        <details>
-          <summary>
-            <span class="twistUp">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="36px"
-                viewBox="0 0 24 24"
-                width="36px"
-                fill="none"
-              >
-                <path d="M0 0h24v24H0V0z" fill="none" />
-                <path
-                  d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8m0-2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13l-4-4h8z"
-                  stroke="#34028b"
-                  fill="#230167"
-                />
-              </svg>
-            </span>
-            <h2 class="h1Query Luv265 fw7 " style="">
-              Using the Font Lookup Table for Greater Flexibility
-            </h2>
-          </summary>
-
-          <p>The table below is current as of January 27, 2022.</p>
-
-          <ul>
-            <li>Cross index reference font size (in CSS px) to CSS weight.</li>
-            <li>
-              Reference fonts for comparison include Barlow, Helvetica Neue,
-              Helvetica, Fira Sans, Kanit, and Arial.
-            </li>
-            <li>
-              APCA Contrast <span class="Lc">L<sup>c</sup> </span> value must
-              meet or exceed the value listed, however, values may be
-              interpolated between the two closest values.
-            </li>
-            <li>
-              For light text on a dark background the APCA tool will show a
-              negative <span class="Lc">L<sup>c</sup> </span> value. Simply use
-              the absolute (positive) value. For example, if the APCA value is
-              <span class="Lc">L<sup>c</sup>-58</span>, use
-              <span class="Lc">L<sup>c</sup> </span>&nbsp;58.
-            </li>
-            <li>
-              A<span class="underWeightSpan"> &osol; </span>indicates that a
-              larger font size (or heavier font weight) must be used.
-            </li>
-            <li>
-              Cells marked with <span class="fwb fs15 bodyText"> </span> may be
-              used for body text. The the body text cells outlined in yellow,
-              add lc 15.
-            </li>
-          </ul>
-
-          <div id="lookup-table" style="overflow: scroll;">
-            <table class="APCAtable">
-              <tr>
-                <th
-                  colspan="11"
-                  class="tableTitle"
-                  style="	border-radius: 18px 18px 0 0;
- height: 2em; font-size: 1.5em;"
+      <div class="explainers">
+        <section class="explainer">
+          <details>
+            <summary>
+              <span class="twistUp">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="30px"
+                  viewBox="0 0 24 24"
+                  width="36px"
+                  fill="none"
                 >
-                  APCA CONTRAST LOOKUP TABLE
-                </th>
-              </tr>
-              <tr>
-                <th
-                  colspan="11"
-                  class="tableTitle"
-                  style="height: 1.1em; padding: 0 0 12px; font-size: 1em; font-weight: 300; vertical-align: top; letter-spacing: 0.2em;"
-                >
-                  Public Beta 0.1.5 (G) • January 27, 2022
-                </th>
-              </tr>
-              <tr>
-                <th colspan="2" class="tableTitle" style="font-size: 1em;"></th>
-                <th
-                  colspan="9"
-                  class="tableTitle"
-                  style="font-size: 1.2em; letter-spacing: 0.15em;"
-                >
-                  Reference Font Weight
-                </th>
-              </tr>
-
-              <tr>
-                <th colspan="2" class="tableTitle" style="font-size: 1em;">
-                  Font<br />Size
-                </th>
-                <th class="weight weight1">100</th>
-                <th class="weight weight2">200</th>
-                <th class="weight weight3">300</th>
-                <th class="weight weight4">
-                  400
-                  <div class="">Normal</div>
-                </th>
-                <th class="weight weight5">500</th>
-                <th class="weight weight6">600</th>
-                <th class="weight weight7">
-                  700
-                  <div class="">Bold</div>
-                </th>
-                <th class="weight weight8">800</th>
-                <th class="weight weight9">900</th>
-              </tr>
-              <tr style="">
-                <th
-                  class="tableTitle"
-                  style="color: #8af2ff; background-color: #066; font-size: 1.1em;"
-                >
-                  pt
-                </th>
-                <th
-                  class="tableTitle"
-                  style="color: #fff; background-color: #28b; font-size: 1.1em;"
-                >
-                  px
-                </th>
-                <th
-                  colspan="9"
-                  class="tableTitle"
-                  style="font-size: 1.1em; letter-spacing: 0.15em; color: #FFF; background-color: #629;"
-                >
-                  APCA Contrast Value (L<sup>c</sup>)
-                </th>
-              </tr>
-
-              <tr>
-                <td class="ptText">9</td>
-                <td class="pxText">12</td>
-                <td class="underWeight">⊘</td>
-                <td class="underWeight">⊘</td>
-                <td class="underWeight">⊘</td>
-
-                <td class="copyOnly">©§™</td>
-                <td class="copyOnly borderRight">©§™</td>
-
-                <td class="copyOnly borderLeft">©§™</td>
-                <td class="copyOnly">©§™</td>
-                <td class="underWeight">⊘</td>
-                <td class="underWeight">⊘</td>
-              </tr>
-
-              <tr>
-                <td class="ptText">10.5</td>
-                <td class="pxText">14</td>
-                <td class="underWeight">⊘</td>
-                <td class="underWeight">⊘</td>
-                <td class="copyOnly">©§™</td>
-                <td class="g4gVal95 bodyText">95</td>
-                <td class="g4gVal90 bodyText borderRight">90</td>
-
-                <td class="g4gVal85 bodyText borderLeft">85</td>
-                <td class="g4gVal75 bodyText">75</td>
-                <td class="underWeight">⊘</td>
-                <td class="underWeight">⊘</td>
-              </tr>
-
-              <tr>
-                <td class="ptText">11.25</td>
-                <td class="pxText">15</td>
-                <td class="underWeight">⊘</td>
-                <td class="underWeight">⊘</td>
-                <td class="copyOnly">©§™</td>
-                <td class="g4gVal90 bodyText">90</td>
-                <td class="g4gVal85 bodyText borderRight">85</td>
-
-                <td class="g4gVal75 bodyText borderLeft">75</td>
-                <td class="g4gVal70 bodyText">70</td>
-                <td class="underWeight">⊘</td>
-                <td class="underWeight">⊘</td>
-              </tr>
-
-              <tr>
-                <td class="ptText">12</td>
-                <td class="pxText">16</td>
-                <td class="underWeight">⊘</td>
-                <td class="underWeight">⊘</td>
-                <td class="copyOnly">©§™</td>
-                <td class="g4gVal85 bodyText">85</td>
-                <td class="g4gVal80 bodyText borderRight">80</td>
-
-                <td class="g4gVal70 bodyText borderLeft">70</td>
-                <td class="g4gVal60 bodyTextPlus">60</td>
-                <td class="g4gVal55 noBody">55</td>
-                <td class="underWeight">⊘</td>
-              </tr>
-
-              <tr>
-                <td class="ptText">12.75</td>
-                <td class="pxText">17</td>
-                <td class="underWeight">⊘</td>
-                <td class="underWeight">⊘</td>
-                <td class="copyOnly">©§™</td>
-                <td class="g4gVal80 bodyText">80</td>
-                <td class="g4gVal75 bodyText borderRight">75</td>
-
-                <td class="g4gVal65 bodyTextPlus borderLeft">65</td>
-                <td class="g4gVal55 bodyTextPlus">55</td>
-                <td class="g4gVal50 noBody">50</td>
-                <td class="g4gVal45 noBody">45</td>
-              </tr>
-
-              <tr>
-                <td class="ptText">13.5</td>
-                <td class="pxText">18</td>
-                <td class="underWeight">⊘</td>
-                <td class="copyOnly">©§™</td>
-                <td class="g4gVal95 bodyText">95</td>
-                <td class="g4gVal75 bodyText">75</td>
-                <td class="g4gVal70 bodyText borderRight">70</td>
-
-                <td class="g4gVal60 bodyTextPlus borderLeft">60</td>
-                <td class="g4gVal50 bodyTextPlus">50</td>
-                <td class="g4gVal45 noBody">45</td>
-                <td class="g4gVal40 noBody">40</td>
-              </tr>
-
-              <tr>
-                <td class="ptText">15.75</td>
-                <td class="pxText">21</td>
-                <td class="underWeight">⊘</td>
-                <td class="copyOnly">©§™</td>
-                <td class="g4gVal90 bodyText">90</td>
-                <td class="g4gVal70 bodyText">70</td>
-                <td class="g4gVal60 bodyTextPlus borderRight">60</td>
-
-                <td class="g4gVal50 bodyTextPlus borderLeft">50</td>
-                <td class="g4gVal45 bodyTextPlus">45</td>
-                <td class="g4gVal40 noBody">40</td>
-                <td class="g4gVal35 noBody">35</td>
-              </tr>
-
-              <tr>
-                <td class="ptText">18</td>
-                <td class="pxText">24</td>
-                <td class="underWeight">⊘</td>
-                <td class="copyOnly">©§™</td>
-                <td class="g4gVal75 bodyText">75</td>
-                <td class="g4gVal60 bodyTextPlus">60</td>
-                <td class="g4gVal55 bodyTextPlus borderRight">55</td>
-
-                <td class="g4gVal45 bodyTextPlus borderLeft">45</td>
-                <td class="g4gVal40 noBody">40</td>
-                <td class="g4gVal40 noBody">40</td>
-                <td class="g4gVal35 noBody">35</td>
-              </tr>
-
-              <tr>
-                <td class="ptText">21</td>
-                <td class="pxText">28</td>
-                <td class="underWeight">⊘</td>
-                <td class="g4gVal95">95</td>
-                <td class="g4gVal70 bodyText">70</td>
-                <td class="g4gVal55 bodyTextPlus">55</td>
-                <td class="g4gVal50 bodyTextPlus borderRight">50</td>
-
-                <td class="g4gVal40 noBody borderLeft">40</td>
-                <td class="g4gVal40 noBody">40</td>
-                <td class="g4gVal35 noBody">35</td>
-                <td class="g4gVal35 noBody">35</td>
-              </tr>
-
-              <tr>
-                <td class="ptText">24</td>
-                <td class="pxText">32</td>
-                <td class="underWeight">⊘</td>
-                <td class="g4gVal85">85</td>
-                <td class="g4gVal65 bodyTextPlus">65</td>
-                <td class="g4gVal50 bodyTextPlus">50</td>
-                <td class="g4gVal45 bodyTextPlus borderRight">45</td>
-
-                <td class="g4gVal40 noBody borderLeft">40</td>
-                <td class="g4gVal35 noBody">35</td>
-                <td class="g4gVal35 noBody">35</td>
-                <td class="g4gVal30 borderLeftTop">30</td>
-              </tr>
-
-              <tr>
-                <td class="ptText">27</td>
-                <td class="pxText">36</td>
-                <td class="underWeight">⊘</td>
-                <td class="g4gVal75">75</td>
-                <td class="g4gVal60 ">60</td>
-                <td class="g4gVal45 ">45</td>
-                <td class="g4gVal40  borderRight">40</td>
-
-                <td class="g4gVal35  borderLeft">35</td>
-                <td class="g4gVal35 ">35</td>
-                <td class="g4gVal30 borderLeftTop">30</td>
-                <td class="g4gVal30 ">30</td>
-              </tr>
-
-              <tr>
-                <td class="ptText">36</td>
-                <td class="pxText">48</td>
-                <td class="g4gVal95 g4gLite">95</td>
-                <td class="g4gVal60">60</td>
-                <td class="g4gVal50 ">50</td>
-                <td class="g4gVal40 ">40</td>
-                <td class="g4gVal35  borderRight">35</td>
-
-                <td class="g4gVal35  borderLeft">35</td>
-                <td class="g4gVal30 borderLeftTop">30</td>
-                <td class="g4gVal30 ">30</td>
-                <td class="g4gVal30 ">30</td>
-              </tr>
-
-              <tr>
-                <td class="ptText">45</td>
-                <td class="pxText">60</td>
-                <td class="g4gVal75 g4gLite">75</td>
-                <td class="g4gVal50">50</td>
-                <td class="g4gVal45 ">45</td>
-                <td class="g4gVal40 ">40</td>
-                <td class="g4gVal35  ">35</td>
-
-                <td class="g4gVal30  borderLeftTop">30</td>
-                <td class="g4gVal30 ">30</td>
-                <td class="g4gVal30 noBody">30</td>
-                <td class="g4gVal30 noBody">30</td>
-              </tr>
-
-              <tr>
-                <td class="ptText">54</td>
-                <td class="pxText">72</td>
-                <td class="g4gVal65 g4gLite">65</td>
-                <td class="g4gVal45">45</td>
-                <td class="g4gVal40 ">40</td>
-                <td class="g4gVal35 ">35</td>
-                <td class="g4gVal30  borderLeftTop">30</td>
-
-                <td class="g4gVal30  ">30</td>
-                <td class="g4gVal30 ">30</td>
-                <td class="g4gVal30 noBody">30</td>
-                <td class="g4gVal30 noBody">30</td>
-              </tr>
-
-              <tr>
-                <td class="ptText">72</td>
-                <td class="pxText">96</td>
-                <td class="g4gLite">50</td>
-                <td class="g4gVal40 ">40</td>
-                <td class="g4gVal35 ">35</td>
-                <td class="g4gVal30 borderLeftTop">30</td>
-                <td class="g4gVal30  ">30</td>
-
-                <td class="g4gVal30  ">30</td>
-                <td class="g4gVal30 ">30</td>
-                <td class="g4gVal30 noBody">30</td>
-                <td class="g4gVal30 noBody">30</td>
-              </tr>
-
-              <tr>
-                <th
-                  colspan="11"
-                  class="tableTitle"
-                  style="	border-radius:  0 0 12px 12px;
- height: 0.75em; font-size: 0.5em; font-weight: 300;"
-                >
-                  Copyright © 2022 by Myndex Research. All Right Reserved.
-                </th>
-              </tr>
-            </table>
-
-            <p class="fs08">
-              The vertical line between weights 500 and 600 indicates the point
-              that a user agent switches from "normal" to "bold" if the
-              intermediate weights are not available.
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8m0-2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13l-4-4h8z"
+                    stroke="#34028b"
+                    fill="#230167"
+                  />
+                </svg>
+              </span>
+              <h3 id="general-guidelines-on-levels" class="Luv275 fw6 h3Query">
+                General Guidelines
+                <span style="font-size: 0.8em;">
+                  For Simple to Use Levels
+                </span>
+              </h3>
+            </summary>
+            <p>
+              These general levels are appropriate for use without reference to
+              the lookup table. The lookup table simply adds additional
+              accuracy, which allows for greater flexibility.
             </p>
 
-            <hr />
+            <ul>
+              <li>
+                <strong>Lc&nbsp;90</strong> • Preferred level for fluent text
+                and columns of body text with a font no smaller than 18px/weight
+                300 or 14px/weight 400 (normal), or non-body text with a font no
+                smaller than 12px. Also a recommended minimum for extremely thin
+                fonts with a minimum of 24px at weight 200. Lc&nbsp;90 is a
+                <em>suggested maximum</em> for
+                <strong>very large and bold fonts</strong> (greater than 36px
+                bold), and large areas of color.
+              </li>
+              <li>
+                <strong>Lc&nbsp;75</strong> • The <em>minimum</em> level for
+                columns of body text with a font no smaller than 24px/300
+                weight, 18px/400, 16px/500 and 14px/700. This level may be used
+                with non-body text with a font no smaller than 15px/400. Also,
+                Lc&nbsp;75 should be considered a minimum for larger for any
+                larger text where readability is important.
+              </li>
+              <li>
+                <strong>Lc&nbsp;60</strong> • The <em>minimum</em> level
+                recommended for content text that is not body, column, or block
+                text. In other words, text you want people to read. The
+                minimums: no smaller than 48px/200, 36px/300, 24px normal weight
+                (400), 21px/500, 18px/600, 16px/700 (bold). These values based
+                on the reference font Helvetica. To use these sizes as body
+                text, add Lc&nbsp;15.
+              </li>
+              <li>
+                <strong>Lc&nbsp;45</strong> • The <em>minimum</em> for larger,
+                heavier text (36px normal weight or 24px bold) such as
+                headlines, and large text that should be fluently readabile but
+                is not body text. This is also the minimum for pictograms with
+                fine details, or smaller outline icons.
+              </li>
+              <li>
+                <strong>Lc&nbsp;30</strong> • The <em>absolute minimum</em> for
+                any text not listed above, including text considered as
+                &quot;spot readable&quot;. This includes placeholder text and
+                disabled element text, and some non-content like a copyright
+                bug. This is also the minimum for large/solid semantic &amp;
+                understandable non-text elements such as &quot;mostly
+                solid&quot; icons or pictograms. Generally no less than 4px in
+                its smallest dimension.
+              </li>
+              <li>
+                <strong>Lc&nbsp;15</strong> • The <em>absolute minimum</em> for
+                any non-text that needs to be <em>discernible</em> and
+                differentiable, and is no less than 6px in its smallest
+                dimention. This may include dividers, and in <em>some</em> cases
+                large buttons or thick focus visible outlines, but does
+                <em>not</em> include fine details which have a higher minimum.
+                <strong
+                  >Designers should treat anything below this level as
+                  invisible</strong
+                >, as it will not be visible for many users. This minimum level
+                should be avoided for any items important to the use,
+                understanding, or interaction of the site.
+              </li>
+            </ul>
+            <p>
+              These define the basic minimum levels, what you might think of as
+              A/AA in the old WCAG&nbsp;2. For the equivelent to AAA, simply
+              increase the contrast values by Lc&nbsp;15.
+            </p>
+          </details>
+          <details>
+            <summary>
+              <span class="twistUp">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="30px"
+                  viewBox="0 0 24 24"
+                  width="36px"
+                  fill="none"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8m0-2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13l-4-4h8z"
+                    stroke="#34028b"
+                    fill="#230167"
+                  />
+                </svg>
+              </span>
+              <h3 class="Luv275 fw6 h3Query" style="">
+                Notes on font size
+              </h3>
+            </summary>
+            <ul>
+              <li>
+                Font sizes listed above assume an x-height ratio of at least
+                0.52. Font weight is based on highly standardized reference
+                fonts such as Helvetica or Arial. &quot;px&quot; means the CSS
+                reference px, not device pixels. The reference px is defined as
+                1.278 arc minutes of visual angle.
+              </li>
+              <li>
+                When selecting, or testing, a font size, all that needs to be
+                done is to compare the x-height to the reference.
+                <ul>
+                  <li>
+                    For instance, Times New Roman has an x-height ratio of 0.45,
+                    so it needs to be increased about 16% in size.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                For font weight, simply set a line of test text in the reference
+                Arial or Helvetical at 400 weight and then below that the same
+                text text in the new font. Try different weights to find the
+                closest match.
+                <ul>
+                  <li>
+                    As an example, the font Raleway 400 weight is closest to
+                    Helvetica 300.
+                  </li>
+                  <li>
+                    So, always add 100 in weight to Raleway to be equivelent.
+                  </li>
+                  <li>
+                    See
+                    <a
+                      href="https://github.com/Myndex/SAPC-APCA/discussions/28#discussioncomment-1610289"
+                      >this discussion answer</a
+                    >
+                    for more.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Consider the font design as well as the basic size and weight,
+                and the potential impact on readability. See
+                <a
+                  href="https://www.researchgate.net/publication/338149302_Evaluating_Fonts_Font_Family_Selection_for_Accessibility_Display_Readability"
+                  >this PDF <strong>&quot;Evaluating Fonts&quot;</strong>
+                </a>
+                for general guidance and a comparison of a few dozen fonts for
+                accessibility.
+              </li>
+            </ul>
+          </details>
 
-            <table
-              class="centeredTable"
-              style="background: #309; padding: 0; border-width: 4px; border-radius: 22px 22px 16px 16px ; border-collapse: separate; border-spacing: 0;"
-            >
-              <tr
-                style="   color: #FFF; background-color: #309; border: 1px solid #94B; "
+          <details>
+            <summary>
+              <span class="twistUp">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="30px"
+                  viewBox="0 0 24 24"
+                  width="36px"
+                  fill="none"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8m0-2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13l-4-4h8z"
+                    stroke="#34028b"
+                    fill="#230167"
+                  />
+                </svg>
+              </span>
+              <h3 id="bridge-pca" class="Luv275 fw6 h3Query" style="">
+                Notes on WCAG&nbsp;2 compatibility
+              </h3>
+            </summary>
+
+            <p>
+              To use the APCA tool for minimum Bridge-PCA conformance (backwards
+              compatible for WCAG&nbsp;2):
+            </p>
+            <ul>
+              <li><b>90</b> • Lc 90 replaces WCAG <b>7:1</b></li>
+              <li><b>75</b> • Lc 75 replaces WCAG <b>4.5:1</b></li>
+              <li><b>60</b> • Lc 60 replaces WCAG <b>3:1</b></li>
+              <li>
+                <b>WoB</b> • For light text on a darker background, when the
+                text is lighter than <code> #eee </code>, increase the minimum
+                value by Lc 10. The dedicated Bridge-PCA tool takes this into
+                account automatically.
+              </li>
+            </ul>
+
+            <p>
+              <strong>NEW!!</strong> If you need to be backwards compatible, the
+              new Bridge-PCA can help! <a href="/BPCA/">Bridge PCA</a> is
+              backwards compatible with WCAG&nbsp;2, shows contrast as both Lc
+              value, <em>and</em> the traditional WCAG&nbsp;2ratios, but with a
+              twist: The "ratios" shown on Bridge PCA are perceptually accurate!
+            </p>
+            <p>
+              This is possible because Bridge PCA uses APCA technology to
+              generate "ratios" that look and feel very much like those of WCAG
+              2.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              <span class="twistUp">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="30px"
+                  viewBox="0 0 24 24"
+                  width="36px"
+                  fill="none"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8m0-2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13l-4-4h8z"
+                    stroke="#34028b"
+                    fill="#230167"
+                  />
+                </svg>
+              </span>
+              <h3 class="Luv275 fw6 h3Query">
+                Using the Font Lookup Table for Greater Flexibility
+              </h3>
+            </summary>
+
+            <p>The table below is current as of January 27, 2022.</p>
+
+            <ul>
+              <li>
+                Cross index reference font size (in CSS px) to CSS weight.
+              </li>
+              <li>
+                Reference fonts for comparison include Barlow, Helvetica Neue,
+                Helvetica, Fira Sans, Kanit, and Arial.
+              </li>
+              <li>
+                APCA Contrast <span class="Lc">L<sup>c</sup> </span> value must
+                meet or exceed the value listed, however, values may be
+                interpolated between the two closest values.
+              </li>
+              <li>
+                For light text on a dark background the APCA tool will show a
+                negative <span class="Lc">L<sup>c</sup> </span> value. Simply
+                use the absolute (positive) value. For example, if the APCA
+                value is <span class="Lc">L<sup>c</sup>-58</span>, use
+                <span class="Lc">L<sup>c</sup> </span>&nbsp;58.
+              </li>
+              <li>
+                A<span class="underWeightSpan"> &osol; </span>indicates that a
+                larger font size (or heavier font weight) must be used.
+              </li>
+              <li>
+                Cells marked with <span class="fwb fs15 bodyText"> </span> may
+                be used for body text. The the body text cells outlined in
+                yellow, add lc 15.
+              </li>
+            </ul>
+
+            <div id="lookup-table" style="overflow: scroll;">
+              <table class="APCAtable">
+                <tr>
+                  <th
+                    colspan="11"
+                    class="tableTitle"
+                    style="height: 2em; font-size: 1.5em;"
+                  >
+                    APCA Contrast Lookup Table
+                  </th>
+                </tr>
+                <tr>
+                  <th
+                    colspan="11"
+                    class="tableTitle"
+                    style="height: 1.1em; padding: 0 0 12px; font-size: 1em; font-weight: 300; vertical-align: top; letter-spacing: 0.2em;"
+                  >
+                    Public Beta 0.1.5 (G) • January 27, 2022
+                  </th>
+                </tr>
+                <tr>
+                  <th
+                    colspan="2"
+                    class="tableTitle"
+                    style="font-size: 1em;"
+                  ></th>
+                  <th
+                    colspan="9"
+                    class="tableTitle"
+                    style="font-size: 1.2em; letter-spacing: 0.15em;"
+                  >
+                    Reference Font Weight
+                  </th>
+                </tr>
+
+                <tr>
+                  <th colspan="2" class="tableTitle" style="font-size: 1em;">
+                    Font<br />Size
+                  </th>
+                  <th class="weight weight1">100</th>
+                  <th class="weight weight2">200</th>
+                  <th class="weight weight3">300</th>
+                  <th class="weight weight4">
+                    400
+                    <div class="">Normal</div>
+                  </th>
+                  <th class="weight weight5">500</th>
+                  <th class="weight weight6">600</th>
+                  <th class="weight weight7">
+                    700
+                    <div class="">Bold</div>
+                  </th>
+                  <th class="weight weight8">800</th>
+                  <th class="weight weight9">900</th>
+                </tr>
+                <tr style="">
+                  <th
+                    class="tableTitle"
+                    style="color: #8af2ff; background-color: #066; font-size: 1.1em;"
+                  >
+                    pt
+                  </th>
+                  <th
+                    class="tableTitle"
+                    style="color: #fff; background-color: #28b; font-size: 1.1em;"
+                  >
+                    px
+                  </th>
+                  <th
+                    colspan="9"
+                    class="tableTitle"
+                    style="font-size: 1.1em; letter-spacing: 0.15em; color: #FFF; background-color: #629;"
+                  >
+                    APCA Contrast Value (L<sup>c</sup>)
+                  </th>
+                </tr>
+
+                <tr>
+                  <td class="ptText">9</td>
+                  <td class="pxText">12</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="underWeight">⊘</td>
+
+                  <td class="copyOnly">©§™</td>
+                  <td class="copyOnly borderRight">©§™</td>
+
+                  <td class="copyOnly borderLeft">©§™</td>
+                  <td class="copyOnly">©§™</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="underWeight">⊘</td>
+                </tr>
+
+                <tr>
+                  <td class="ptText">10.5</td>
+                  <td class="pxText">14</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="copyOnly">©§™</td>
+                  <td class="g4gVal95 bodyText">95</td>
+                  <td class="g4gVal90 bodyText borderRight">90</td>
+
+                  <td class="g4gVal85 bodyText borderLeft">85</td>
+                  <td class="g4gVal75 bodyText">75</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="underWeight">⊘</td>
+                </tr>
+
+                <tr>
+                  <td class="ptText">11.25</td>
+                  <td class="pxText">15</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="copyOnly">©§™</td>
+                  <td class="g4gVal90 bodyText">90</td>
+                  <td class="g4gVal85 bodyText borderRight">85</td>
+
+                  <td class="g4gVal75 bodyText borderLeft">75</td>
+                  <td class="g4gVal70 bodyText">70</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="underWeight">⊘</td>
+                </tr>
+
+                <tr>
+                  <td class="ptText">12</td>
+                  <td class="pxText">16</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="copyOnly">©§™</td>
+                  <td class="g4gVal85 bodyText">85</td>
+                  <td class="g4gVal80 bodyText borderRight">80</td>
+
+                  <td class="g4gVal70 bodyText borderLeft">70</td>
+                  <td class="g4gVal60 bodyTextPlus">60</td>
+                  <td class="g4gVal55 noBody">55</td>
+                  <td class="underWeight">⊘</td>
+                </tr>
+
+                <tr>
+                  <td class="ptText">12.75</td>
+                  <td class="pxText">17</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="copyOnly">©§™</td>
+                  <td class="g4gVal80 bodyText">80</td>
+                  <td class="g4gVal75 bodyText borderRight">75</td>
+
+                  <td class="g4gVal65 bodyTextPlus borderLeft">65</td>
+                  <td class="g4gVal55 bodyTextPlus">55</td>
+                  <td class="g4gVal50 noBody">50</td>
+                  <td class="g4gVal45 noBody">45</td>
+                </tr>
+
+                <tr>
+                  <td class="ptText">13.5</td>
+                  <td class="pxText">18</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="copyOnly">©§™</td>
+                  <td class="g4gVal95 bodyText">95</td>
+                  <td class="g4gVal75 bodyText">75</td>
+                  <td class="g4gVal70 bodyText borderRight">70</td>
+
+                  <td class="g4gVal60 bodyTextPlus borderLeft">60</td>
+                  <td class="g4gVal50 bodyTextPlus">50</td>
+                  <td class="g4gVal45 noBody">45</td>
+                  <td class="g4gVal40 noBody">40</td>
+                </tr>
+
+                <tr>
+                  <td class="ptText">15.75</td>
+                  <td class="pxText">21</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="copyOnly">©§™</td>
+                  <td class="g4gVal90 bodyText">90</td>
+                  <td class="g4gVal70 bodyText">70</td>
+                  <td class="g4gVal60 bodyTextPlus borderRight">60</td>
+
+                  <td class="g4gVal50 bodyTextPlus borderLeft">50</td>
+                  <td class="g4gVal45 bodyTextPlus">45</td>
+                  <td class="g4gVal40 noBody">40</td>
+                  <td class="g4gVal35 noBody">35</td>
+                </tr>
+
+                <tr>
+                  <td class="ptText">18</td>
+                  <td class="pxText">24</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="copyOnly">©§™</td>
+                  <td class="g4gVal75 bodyText">75</td>
+                  <td class="g4gVal60 bodyTextPlus">60</td>
+                  <td class="g4gVal55 bodyTextPlus borderRight">55</td>
+
+                  <td class="g4gVal45 bodyTextPlus borderLeft">45</td>
+                  <td class="g4gVal40 noBody">40</td>
+                  <td class="g4gVal40 noBody">40</td>
+                  <td class="g4gVal35 noBody">35</td>
+                </tr>
+
+                <tr>
+                  <td class="ptText">21</td>
+                  <td class="pxText">28</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="g4gVal95">95</td>
+                  <td class="g4gVal70 bodyText">70</td>
+                  <td class="g4gVal55 bodyTextPlus">55</td>
+                  <td class="g4gVal50 bodyTextPlus borderRight">50</td>
+
+                  <td class="g4gVal40 noBody borderLeft">40</td>
+                  <td class="g4gVal40 noBody">40</td>
+                  <td class="g4gVal35 noBody">35</td>
+                  <td class="g4gVal35 noBody">35</td>
+                </tr>
+
+                <tr>
+                  <td class="ptText">24</td>
+                  <td class="pxText">32</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="g4gVal85">85</td>
+                  <td class="g4gVal65 bodyTextPlus">65</td>
+                  <td class="g4gVal50 bodyTextPlus">50</td>
+                  <td class="g4gVal45 bodyTextPlus borderRight">45</td>
+
+                  <td class="g4gVal40 noBody borderLeft">40</td>
+                  <td class="g4gVal35 noBody">35</td>
+                  <td class="g4gVal35 noBody">35</td>
+                  <td class="g4gVal30 borderLeftTop">30</td>
+                </tr>
+
+                <tr>
+                  <td class="ptText">27</td>
+                  <td class="pxText">36</td>
+                  <td class="underWeight">⊘</td>
+                  <td class="g4gVal75">75</td>
+                  <td class="g4gVal60 ">60</td>
+                  <td class="g4gVal45 ">45</td>
+                  <td class="g4gVal40  borderRight">40</td>
+
+                  <td class="g4gVal35  borderLeft">35</td>
+                  <td class="g4gVal35 ">35</td>
+                  <td class="g4gVal30 borderLeftTop">30</td>
+                  <td class="g4gVal30 ">30</td>
+                </tr>
+
+                <tr>
+                  <td class="ptText">36</td>
+                  <td class="pxText">48</td>
+                  <td class="g4gVal95 g4gLite">95</td>
+                  <td class="g4gVal60">60</td>
+                  <td class="g4gVal50 ">50</td>
+                  <td class="g4gVal40 ">40</td>
+                  <td class="g4gVal35  borderRight">35</td>
+
+                  <td class="g4gVal35  borderLeft">35</td>
+                  <td class="g4gVal30 borderLeftTop">30</td>
+                  <td class="g4gVal30 ">30</td>
+                  <td class="g4gVal30 ">30</td>
+                </tr>
+
+                <tr>
+                  <td class="ptText">45</td>
+                  <td class="pxText">60</td>
+                  <td class="g4gVal75 g4gLite">75</td>
+                  <td class="g4gVal50">50</td>
+                  <td class="g4gVal45 ">45</td>
+                  <td class="g4gVal40 ">40</td>
+                  <td class="g4gVal35  ">35</td>
+
+                  <td class="g4gVal30  borderLeftTop">30</td>
+                  <td class="g4gVal30 ">30</td>
+                  <td class="g4gVal30 noBody">30</td>
+                  <td class="g4gVal30 noBody">30</td>
+                </tr>
+
+                <tr>
+                  <td class="ptText">54</td>
+                  <td class="pxText">72</td>
+                  <td class="g4gVal65 g4gLite">65</td>
+                  <td class="g4gVal45">45</td>
+                  <td class="g4gVal40 ">40</td>
+                  <td class="g4gVal35 ">35</td>
+                  <td class="g4gVal30  borderLeftTop">30</td>
+
+                  <td class="g4gVal30  ">30</td>
+                  <td class="g4gVal30 ">30</td>
+                  <td class="g4gVal30 noBody">30</td>
+                  <td class="g4gVal30 noBody">30</td>
+                </tr>
+
+                <tr>
+                  <td class="ptText">72</td>
+                  <td class="pxText">96</td>
+                  <td class="g4gLite">50</td>
+                  <td class="g4gVal40 ">40</td>
+                  <td class="g4gVal35 ">35</td>
+                  <td class="g4gVal30 borderLeftTop">30</td>
+                  <td class="g4gVal30  ">30</td>
+
+                  <td class="g4gVal30  ">30</td>
+                  <td class="g4gVal30 ">30</td>
+                  <td class="g4gVal30 noBody">30</td>
+                  <td class="g4gVal30 noBody">30</td>
+                </tr>
+
+                <tr>
+                  <th
+                    colspan="11"
+                    class="tableTitle"
+                    style="height: 0.75em; font-size: 0.5em; font-weight: 300;"
+                  >
+                    Copyright © 2022 by Myndex Research. All Right Reserved.
+                  </th>
+                </tr>
+              </table>
+
+              <p class="fs08">
+                The vertical line between weights 500 and 600 indicates the
+                point that a user agent switches from "normal" to "bold" if the
+                intermediate weights are not available.
+              </p>
+
+              <table
+                class="centeredTable"
+                style="background: #309; padding: 0; border-width: 4px; border-radius: 22px 22px 16px 16px ; border-collapse: separate; border-spacing: 0;"
               >
-                <th
-                  colspan="1"
-                  class="tableTitle"
-                  style="  text-align: center; height: 2em; font-size: 1.5em; border: 1px solid #94B; border-radius: 18px 18px 0 0;"
+                <tr
+                  style="   color: #FFF; background-color: #309; border: 1px solid #94B; "
                 >
-                  APCA CONTRAST LEGEND
-                </th>
-              </tr>
-              <tr style="background-color: #e8f5ff" ;>
-                <td class="colorCodes underWeight">
-                  <span style="font-size:1.8em; line-height:0.2;">⊘</span> —
-                  Prohibited Except for Decorative Purposes
-                </td>
-              </tr>
-              <tr style="background-color: #e8f5ff" ;>
-                <td
-                  class="colorCodes nonText borderNT"
-                  tyle="border-width: 6px;"
-                >
-                  <span style="font-size:1.8em; line-height:0.7;"> </span>Under
-                  Lc 30 is for non-text only.
-                </td>
-              </tr>
-              <tr style="background-color: #e8f5ff" ;>
-                <td class="colorCodes copyOnly ffh">
-                  <span style="font-size:1.4em; font-weight:700;">©§™</span> —
-                  Placeholder/Disabled/Copyright ONLY
-                </td>
-              </tr>
-              <!--       <tr>
+                  <th
+                    colspan="1"
+                    class="tableTitle"
+                    style="  text-align: center; height: 2em; font-size: 1.5em; border: 1px solid #94B; border-radius: 18px 18px 0 0;"
+                  >
+                    APCA Contrast Legend
+                  </th>
+                </tr>
+                <tr style="background-color: #e8f5ff" ;>
+                  <td class="colorCodes underWeight">
+                    <span style="font-size:1.8em; line-height:0.2;">⊘</span> —
+                    Prohibited Except for Decorative Purposes
+                  </td>
+                </tr>
+                <tr style="background-color: #e8f5ff" ;>
+                  <td
+                    class="colorCodes nonText borderNT"
+                    tyle="border-width: 6px;"
+                  >
+                    <span style="font-size:1.8em; line-height:0.7;"> </span
+                    >Under Lc 30 is for non-text only.
+                  </td>
+                </tr>
+                <tr style="background-color: #e8f5ff" ;>
+                  <td class="colorCodes copyOnly ffh">
+                    <span style="font-size:1.4em; font-weight:700;">©§™</span> —
+                    Placeholder/Disabled/Copyright ONLY
+                  </td>
+                </tr>
+                <!--       <tr>
           <td class="colorCodes bgOrLt"> <span style="font-size:1.8em; line-height:0.7;">&times;</span> — Do Not Use for Body Text (Blocks or Columns)</td>
         </tr>   -->
-              <tr style="background-color: #e8f5ff" ;>
-                <td class="colorCodes g4gLite cR" style="border-width: 10px;">
-                  Weight 100 Fonts Should be Avoided
-                </td>
-              </tr>
-              <tr style="background-color: #e8f5ff" ;>
-                <td class="colorCodes bodyTextPlus" style="border-width: 9px;">
-                  To use as Block/Body Text, ADD Lc 15
-                </td>
-              </tr>
-              <tr style="background-color: #e8f5ff" ;>
-                <td class="colorCodes bodyText" style="border-width: 12px;">
-                  Block/Body Text Zone—okay minimum values
-                </td>
-              </tr>
-              <tr style="background-color: #e8f5ff" ;>
-                <td class="colorCodes  g4gVal90 borderVisible">
-                  APCA Lc 90 — "Similar" to ISO 10∶1
-                </td>
-              </tr>
-              <tr style="background-color: #e8f5ff" ;>
-                <td class="colorCodes  g4gVal75 borderVisible">
-                  APCA Lc 75 — "Similar" to WCAG 7∶1
-                </td>
-              </tr>
-              <tr style="background-color: #e8f5ff" ;>
-                <td class="colorCodes  g4gVal60 borderVisible">
-                  APCA Lc 60 — "Similar" to WCAG 4.5∶1
-                </td>
-              </tr>
-              <tr style="background-color: #e8f5ff" ;>
-                <td class="colorCodes  g4gVal45 borderVisible">
-                  APCA Lc 45 — "Similar" to WCAG 3∶1
-                </td>
-              </tr>
-              <tr style="background-color: #e8f5ff" ;>
-                <td class="colorCodes g4gVal30 borderVisible">
-                  <span style="font-size:1.2em; font-weight:700;">&gt; 30</span>
-                  — Minimum Contrast for Any Text
-                </td>
-              </tr>
-              <tr>
-                <th
-                  class="colorCodes tableTitle"
-                  style="border-radius: 0 0 12px 12px; height: 0.75em; text-align: center; font-size: 0.6em; font-weight: 300; color: #fff; background: #309;"
-                >
-                  Copyright © 2022 by Myndex Research. All Right Reserved.
-                </th>
-              </tr>
-            </table>
-          </div>
-          <hr />
+                <tr style="background-color: #e8f5ff" ;>
+                  <td class="colorCodes g4gLite cR" style="border-width: 10px;">
+                    Weight 100 Fonts Should be Avoided
+                  </td>
+                </tr>
+                <tr style="background-color: #e8f5ff" ;>
+                  <td
+                    class="colorCodes bodyTextPlus"
+                    style="border-width: 9px;"
+                  >
+                    To use as Block/Body Text, ADD Lc 15
+                  </td>
+                </tr>
+                <tr style="background-color: #e8f5ff" ;>
+                  <td class="colorCodes bodyText" style="border-width: 12px;">
+                    Block/Body Text Zone—okay minimum values
+                  </td>
+                </tr>
+                <tr style="background-color: #e8f5ff" ;>
+                  <td class="colorCodes  g4gVal90 borderVisible">
+                    APCA Lc 90 — "Similar" to ISO 10∶1
+                  </td>
+                </tr>
+                <tr style="background-color: #e8f5ff" ;>
+                  <td class="colorCodes  g4gVal75 borderVisible">
+                    APCA Lc 75 — "Similar" to WCAG 7∶1
+                  </td>
+                </tr>
+                <tr style="background-color: #e8f5ff" ;>
+                  <td class="colorCodes  g4gVal60 borderVisible">
+                    APCA Lc 60 — "Similar" to WCAG 4.5∶1
+                  </td>
+                </tr>
+                <tr style="background-color: #e8f5ff" ;>
+                  <td class="colorCodes  g4gVal45 borderVisible">
+                    APCA Lc 45 — "Similar" to WCAG 3∶1
+                  </td>
+                </tr>
+                <tr style="background-color: #e8f5ff" ;>
+                  <td class="colorCodes g4gVal30 borderVisible">
+                    <span style="font-size:1.2em; font-weight:700;"
+                      >&gt; 30</span
+                    >
+                    — Minimum Contrast for Any Text
+                  </td>
+                </tr>
+                <tr>
+                  <th
+                    class="colorCodes tableTitle"
+                    style="border-radius: 0 0 12px 12px; height: 0.75em; text-align: center; font-size: 0.6em; font-weight: 300; color: #fff; background: #309;"
+                  >
+                    Copyright © 2022 by Myndex Research. All Right Reserved.
+                  </th>
+                </tr>
+              </table>
+            </div>
 
-          <div id="lookup-table" style="overflow: scroll;">
-            <table class="APCAtable ">
-              <tr>
-                <th
-                  colspan="11"
-                  class="tableTitle"
-                  style="	border-radius: 18px 18px 0 0;
- height: 2em; font-size: 1.5em;"
-                >
-                  APCA Sorted by Contrast
-                </th>
-              </tr>
-              <tr>
-                <th
-                  colspan="11"
-                  class="tableTitle"
-                  style="height: 1.1em; padding: 0 0 12px; font-size: 1em; font-weight: 300; vertical-align: top; letter-spacing: 0.2em;"
-                >
-                  Public Beta 0.1.5 (G) • January 27, 2022
-                </th>
-              </tr>
-              <tr>
-                <th colspan="2" class="tableTitle" style="font-size: 1em;"></th>
-                <th
-                  colspan="9"
-                  class="tableTitle"
-                  style="font-size: 1.2em; letter-spacing: 0.15em;"
-                >
-                  Reference Font Weight
-                </th>
-              </tr>
-              <tr>
-                <th colspan="2" class="tableTitle" style="font-size: 1em;">
-                  APCA<br />Contrast
-                </th>
-                <th class="weight weight1">100</th>
-                <th class="weight weight2">200</th>
-                <th class="weight weight3">300</th>
-                <th class="weight weight4">400</th>
-                <th class="weight weight5">500</th>
-                <th class="weight weight6">600</th>
-                <th class="weight weight7">700</th>
-                <th class="weight weight8">800</th>
-                <th class="weight weight9">900</th>
-              </tr>
-              <tr style="">
-                <th
-                  colspan="2"
-                  class="tableTitle"
-                  style="color: #fff; background-color: #28b; font-size: 1.1em;"
-                >
-                  (L<sup>c</sup>)
-                </th>
-                <th
-                  colspan="9"
-                  class="tableTitle"
-                  style="font-size: 1.1em; letter-spacing: 0.15em; color: #FFF; background-color: #629;"
-                >
-                  Font Size in px
-                </th>
-              </tr>
+            <div id="lookup-table" style="overflow: scroll;">
+              <table class="APCAtable ">
+                <tr>
+                  <th
+                    colspan="11"
+                    class="tableTitle"
+                    style="height: 2em; font-size: 1.5em;"
+                  >
+                    APCA Sorted by Contrast
+                  </th>
+                </tr>
+                <tr>
+                  <th
+                    colspan="11"
+                    class="tableTitle"
+                    style="height: 1.1em; padding: 0 0 12px; font-size: 1em; font-weight: 300; vertical-align: top; letter-spacing: 0.2em;"
+                  >
+                    Public Beta 0.1.5 (G) • January 27, 2022
+                  </th>
+                </tr>
+                <tr>
+                  <th
+                    colspan="2"
+                    class="tableTitle"
+                    style="font-size: 1em;"
+                  ></th>
+                  <th
+                    colspan="9"
+                    class="tableTitle"
+                    style="font-size: 1.2em; letter-spacing: 0.15em;"
+                  >
+                    Reference Font Weight
+                  </th>
+                </tr>
+                <tr>
+                  <th colspan="2" class="tableTitle" style="font-size: 1em;">
+                    APCA<br />Contrast
+                  </th>
+                  <th class="weight weight1">100</th>
+                  <th class="weight weight2">200</th>
+                  <th class="weight weight3">300</th>
+                  <th class="weight weight4">400</th>
+                  <th class="weight weight5">500</th>
+                  <th class="weight weight6">600</th>
+                  <th class="weight weight7">700</th>
+                  <th class="weight weight8">800</th>
+                  <th class="weight weight9">900</th>
+                </tr>
+                <tr style="">
+                  <th
+                    colspan="2"
+                    class="tableTitle"
+                    style="color: #fff; background-color: #28b; font-size: 1.1em;"
+                  >
+                    (L<sup>c</sup>)
+                  </th>
+                  <th
+                    colspan="9"
+                    class="tableTitle"
+                    style="font-size: 1.1em; letter-spacing: 0.15em; color: #FFF; background-color: #629;"
+                  >
+                    Font Size in px
+                  </th>
+                </tr>
 
-              <tr>
-                <th style="font-weight: 600; text-align: right;">Lc</th>
-                <th style="font-size: 1.2em; text-align: left;">&nbsp;100</th>
-                <td class="g4gLite2  wgt100  pxText">46.5</td>
-                <td class=" noBody  wgt200  pxText minSize">28</td>
-                <td class=" bodyText2 wgt300  pxText minSize">18</td>
-                <td class="g4gFontTbl100 bodyText2  wgt400  pxText minSize">
-                  14
-                </td>
-                <td
-                  class="g4gFontTbl100 bodyText2  borderRight  wgt500  pxText minSize"
-                >
-                  14
-                </td>
-                <td
-                  class="g4gFontTbl100 bodyText2 borderLeft wgt600  pxText minSize"
-                >
-                  14
-                </td>
-                <td class="g4gFontTbl100 bodyText2  wgt700  pxText minSize">
-                  14
-                </td>
-                <td class=" noBody pxText minSize">16</td>
-                <td class=" noBody pxText minSize">18</td>
-              </tr>
-              <tr>
-                <th style="font-weight: 600; text-align: right;">Lc</th>
-                <th style="font-size: 1.2em; text-align: left;">&nbsp;95</th>
-                <td class="g4gLite2  wgt100  pxText">48.5</td>
-                <td class="g4gFontTbl95 noBody wgt200  pxText">29</td>
-                <td class="g4gFontTbl95 bodyText2 wgt300  pxText">20.5</td>
-                <td class="g4gFontTbl95 bodyText2 wgt400  pxText">14.5</td>
-                <td class="g4gFontTbl95 bodyText2  borderRight wgt500  pxText">
-                  14
-                </td>
-                <td class="g4gFontTbl95 bodyText2 borderLeft wgt600  pxText">
-                  14
-                </td>
-                <td class="g4gFontTbl95 bodyText2 wgt700  pxText minSize">
-                  14
-                </td>
-                <td class=" noBody pxText minSize">16</td>
-                <td class=" noBody pxText minSize">18</td>
-              </tr>
-              <tr>
-                <th style="font-weight: 600; text-align: right;">Lc</th>
-                <th style="font-size: 1.2em; text-align: left;">&nbsp;90</th>
-                <td class="g4gLite2 g4gFontTbl90 wgt100  pxText">50</td>
-                <td class="g4gFontTbl90 noBody wgt200  pxText">30</td>
-                <td class="g4gFontTbl90 bodyText2 wgt300  pxText">21</td>
-                <td class="g4gFontTbl90 bodyText2 wgt400  pxText">15</td>
-                <td class="g4gFontTbl90 bodyText2  borderRight  wgt500  pxText">
-                  14.5
-                </td>
-                <td class="g4gFontTbl90 bodyText2  borderLeft wgt600  pxText">
-                  14
-                </td>
-                <td class="g4gFontTbl90 bodyText2 wgt700  pxText">14</td>
-                <td class=" noBody pxText minSize">16</td>
-                <td class=" noBody pxText minSize">18</td>
-              </tr>
-              <tr>
-                <th style="font-weight: 600; text-align: right;">Lc</th>
-                <th style="font-size: 1.2em; text-align: left;">&nbsp;85</th>
-                <td class="g4gLite2 g4gFontTbl85 wgt100  pxText">53.5</td>
-                <td class="g4gFontTbl85 wgt200  pxText">32</td>
-                <td class="g4gFontTbl85 bodyText2 wgt300  pxText">22</td>
-                <td class="g4gFontTbl85 bodyText2 wgt400  pxText">16</td>
-                <td class="g4gFontTbl85 bodyText2 borderRight wgt500  pxText">
-                  15
-                </td>
-                <td class="g4gFontTbl85 bodyText2   borderLeft wgt600  pxText">
-                  14
-                </td>
-                <td class="empty bodyText2">14</td>
-                <td class=" noBody pxText minSize">16</td>
-                <td class=" noBody pxText minSize">18</td>
-              </tr>
-              <tr>
-                <th style="font-weight: 600; text-align: right;">Lc</th>
-                <th style="font-size: 1.2em; text-align: left;">&nbsp;80</th>
-                <td class="g4gLite2 80 wgt100  pxText">56.5</td>
-                <td class="g4gFontTbl80 wgt200  pxText">34</td>
-                <td class="empty bodyText2">23</td>
-                <td class="empty  bodyText2">17</td>
-                <td class="g4gFontTbl80  borderRight bodyText2  wgt500  pxText">
-                  16
-                </td>
-                <td class="empty  borderLeft  bodyText2">14.5</td>
-                <td class="empty  bodyText2">14</td>
-                <td class=" noBody pxText minSize">16</td>
-                <td class=" noBody pxText minSize">18</td>
-              </tr>
-              <tr>
-                <th style="font-weight: 600; text-align: right;">Lc</th>
-                <th style="font-size: 1.2em; text-align: left;">&nbsp;75</th>
-                <td class="g4gLite2 g4gFontTbl75 wgt100  pxText">60</td>
-                <td class="g4gFontTbl75 wgt200  pxText">36</td>
-                <td class="g4gFontTbl75 bodyText2 wgt300  pxText">24</td>
-                <td class="g4gFontTbl75 bodyText2 wgt400  pxText">18</td>
-                <td class="g4gFontTbl75 bodyText2  borderRight wgt500  pxText">
-                  17
-                </td>
-                <td class="g4gFontTbl75 bodyText2  borderLeft wgt600  pxText">
-                  15
-                </td>
-                <td class="g4gFontTbl75 bodyText2 wgt700  pxText">14</td>
-                <td class=" noBody pxText minSize">16</td>
-                <td class=" noBody pxText minSize">18</td>
-              </tr>
-              <tr>
-                <th style="font-weight: 600; text-align: right;">Lc</th>
-                <th style="font-size: 1.2em; text-align: left;">&nbsp;70</th>
-                <td class="g4gLite2 empty">65</td>
-                <td class=" wgt200  pxText">39</td>
-                <td class="g4gFontTbl70 bodyText2 wgt300  pxText">27.5</td>
-                <td class="g4gFontTbl70 bodyText2 wgt400  pxText">19.5</td>
-                <td class="g4gFontTbl70 bodyText2  borderRight  wgt500  pxText">
-                  18
-                </td>
-                <td class="g4gFontTbl70 bodyText2  borderLeft  wgt600  pxText">
-                  16
-                </td>
-                <td class="empty bodyText2">14.5</td>
-                <td class=" noBody pxText minSize">16</td>
-                <td class=" noBody pxText minSize">18</td>
-              </tr>
-              <tr>
-                <th style="font-weight: 600; text-align: right;">Lc</th>
-                <th style="font-size: 1.2em; text-align: left;">&nbsp;65</th>
-                <td class="g4gLite2 empty">71.5</td>
-                <td class="g4gFontTbl65 wgt200  pxText">43</td>
-                <td class="g4gFontTbl65 bodyTextPlus2 wgt300  pxText">30.5</td>
-                <td class="empty bodyTextPlus2">21.5</td>
-                <td class="empty bodyTextPlus2 borderRight ">19.5</td>
-                <td class="empty bodyTextPlus2 borderLeft ">17</td>
-                <td class="empty bodyTextPlus2">15</td>
-                <td class=" noBody pxText minSize">16</td>
-                <td class=" noBody pxText minSize">18</td>
-              </tr>
-              <tr>
-                <th style="font-weight: 600; text-align: right;">Lc</th>
-                <th style="font-size: 1.2em; text-align: left;">&nbsp;60</th>
-                <td class="g4gFontTbl60 g4gLite2 wgt100  pxText">80</td>
-                <td class="g4gFontTbl60 wgt200  pxText">48</td>
-                <td class="g4gFontTbl60 bodyTextPlus2 wgt300  pxText">34</td>
-                <td class="g4gFontTbl60 bodyTextPlus2 wgt400  pxText">24</td>
-                <td
-                  class="g4gFontTbl60 bodyTextPlus2  borderRight wgt500  pxText"
-                >
-                  21
-                </td>
-                <td
-                  class="g4gFontTbl60 bodyTextPlus2  borderLeft wgt600  pxText"
-                >
-                  18
-                </td>
-                <td class="g4gFontTbl60 bodyTextPlus2 wgt700  pxText">16</td>
-                <td class="g4gFontTbl60 noBody pxText">16</td>
-                <td class="g4gFontTbl60 noBody pxText ">18</td>
-              </tr>
-              <tr>
-                <th style="font-weight: 600; text-align: right;">Lc</th>
-                <th style="font-size: 1.2em; text-align: left;">&nbsp;55</th>
-                <td class="g4gLite2 empty">86.5</td>
-                <td class="g4gFontTbl55 wgt200  pxText">52</td>
-                <td class="empty">37</td>
-                <td class="g4gFontTbl55 bodyTextPlus2 wgt400  pxText">26</td>
-                <td
-                  class="g4gFontTbl55 bodyTextPlus2  borderRight  wgt500  pxText"
-                >
-                  20.5
-                </td>
-                <td class="empty bodyTextPlus2 borderLeft  ">18.5</td>
-                <td class="g4gFontTbl55 bodyTextPlus2 wgt700  pxText">16.5</td>
-                <td class="g4gFontTbl55 noBody pxText">16</td>
-                <td class="g4gFontTbl55 noBody pxText">18</td>
-              </tr>
-              <tr>
-                <th style="font-weight: 600; text-align: right;">Lc</th>
-                <th style="font-size: 1.2em; text-align: left;">&nbsp;50</th>
-                <td class="nonText2">92.5</td>
-                <td class="empty">58</td>
-                <td class="g4gFontTbl50 wgt300  pxText">41</td>
-                <td class="g4gFontTbl50 bodyTextPlus2 wgt400  pxText">29</td>
-                <td class="g4gFontTbl50 bodyTextPlus2  wgt500  pxText">22</td>
-                <td
-                  class="g4gFontTbl50 bodyTextPlus2  borderLeft  wgt600  pxText"
-                >
-                  20
-                </td>
-                <td class="empty bodyTextPlus2">17.5</td>
-                <td class="empty">16.5</td>
-                <td class="empty">18</td>
-              </tr>
-              <tr>
-                <th style="font-weight: 600; text-align: right;">Lc</th>
-                <th style="font-size: 1.2em; text-align: left;">&nbsp;45</th>
-                <td class="nonText2 wgt100  pxText">120</td>
-                <td class="g4gFontTbl45 45 wgt200  pxText">72</td>
-                <td class="g4gFontTbl45 wgt300  pxText">51</td>
-                <td class="g4gFontTbl45 bodyTextPlus2 wgt400  pxText">36</td>
-                <td
-                  class="g4gFontTbl45 bodyTextPlus2  borderRight  wgt500  pxText"
-                >
-                  27
-                </td>
-                <td
-                  class="g4gFontTbl45 bodyTextPlus2  borderLeft  wgt600  pxText"
-                >
-                  23.5
-                </td>
-                <td class="g4gFontTbl45 bodyTextPlus2 wgt700  pxText">20</td>
-                <td class="g4gFontTbl45 noBody pxText">18</td>
-                <td class="g4gFontTbl45 noBody pxText">18</td>
-              </tr>
-              <tr>
-                <th style="font-weight: 600; text-align: right;">Lc</th>
-                <th style="font-size: 1.2em; text-align: left;">&nbsp;40</th>
-                <td class="nonText2">160</td>
-                <td class="nonText2">96</td>
-                <td class="g4gFontTbl40 wgt300  pxText">68</td>
-                <td class="g4gFontTbl40 wgt400  pxText">48</td>
-                <td class="g4gFontTbl40  borderRight  wgt500  pxText">34</td>
-                <td class="g4gFontTbl40 borderLeft  wgt600  pxText">29</td>
-                <td class="g4gFontTbl40  wgt700  pxText">24</td>
-                <td class="g4gFontTbl40 noBody pxText">19</td>
-                <td class="g4gFontTbl40 noBody pxText">18</td>
-              </tr>
-              <tr>
-                <th style="font-weight: 600; text-align: right;">Lc</th>
-                <th style="font-size: 1.2em; text-align: left;">&nbsp;35</th>
-                <td class="nonText2">220</td>
-                <td class="nonText2">132</td>
-                <td class="g4gFontTbl35 wgt300  pxText">93.5</td>
-                <td class="g4gFontTbl35 wgt400  pxText">66</td>
-                <td class="g4gFontTbl35  borderRight wgt500  pxText">46.5</td>
-                <td class="g4gFontTbl35 borderLeft wgt600  pxText">40</td>
-                <td class="g4gFontTbl35 wgt700  pxText">33</td>
-                <td class="g4gFontTbl35  pxText">26.5</td>
-                <td class="g4gFontTbl35  pxText">20</td>
-              </tr>
-              <tr>
-                <th style="font-weight: 600; text-align: right;">Lc</th>
-                <th style="font-size: 1.2em; text-align: left;">&nbsp;30</th>
-                <td class="nonText2">320</td>
-                <td class="nonText2">192</td>
-                <td class="g4gFontTbl30  wgt300  pxText">135</td>
-                <td class="g4gFontTbl30  wgt400  pxText">96</td>
-                <td class="g4gFontTbl30  borderRight  wgt500  pxText">68</td>
-                <td class="g4gFontTbl30 borderLeft wgt600  pxText">58</td>
-                <td class="g4gFontTbl30  wgt700  pxText">48</td>
-                <td class="g4gFontTbl30  pxText">38.5</td>
-                <td class="g4gFontTbl30  pxText">29</td>
-              </tr>
-              <tr>
-                <th
-                  colspan="11"
-                  class="tableTitle"
-                  style="	border-radius:  0 0 12px 12px;
- height: 0.75em; font-size: 0.5em; font-weight: 300;"
-                >
-                  Copyright © 2022 by Myndex Research. All Right Reserved.
-                </th>
-              </tr>
-            </table>
-          </div>
-          <ul>
-            <li>
-              Values shown are for common sans-serif fonts (e.g., Helvetica,
-              Arial, Verdana, Montserrat, Roboto, Calibri, Trebuchet).
-            </li>
-            <li>
-              Many serif fonts should use values for the row above (e.g., Times,
-              Georgia, Cambria, Courier), and especially should be compared in
-              terms of x-height.
-            </li>
-            <li>
-              Decorative, unusual, and very thin fonts should be avoided for
-              fluently readable text and especially columns of body text.
-            </li>
-            <li>
-              Due to the vast variety of font designs, designers should visually
-              compare an unusual font to a standard font such as Helvetica,
-              using the size and weight of Helvetica that most closesly matches
-              the appearance of the tested font as a guide.
-            </li>
-            <li>
-              Designers are cautioned that bypassing default font smoothing can
-              drastically reduce contrast for small or thin fonts. For instance,
-              the use of "-webkit-font-smoothing: antialiasing" is strongly
-              discouraged.
-            </li>
-          </ul>
-        </details>
-      </section>
-      <!-- ********    Close Guidlines Section     ********    -->
+                <tr>
+                  <th style="font-weight: 600; text-align: right;">Lc</th>
+                  <th style="font-size: 1.2em; text-align: left;">&nbsp;100</th>
+                  <td class="g4gLite2  wgt100  pxText">46.5</td>
+                  <td class=" noBody  wgt200  pxText minSize">28</td>
+                  <td class=" bodyText2 wgt300  pxText minSize">18</td>
+                  <td class="g4gFontTbl100 bodyText2  wgt400  pxText minSize">
+                    14
+                  </td>
+                  <td
+                    class="g4gFontTbl100 bodyText2  borderRight  wgt500  pxText minSize"
+                  >
+                    14
+                  </td>
+                  <td
+                    class="g4gFontTbl100 bodyText2 borderLeft wgt600  pxText minSize"
+                  >
+                    14
+                  </td>
+                  <td class="g4gFontTbl100 bodyText2  wgt700  pxText minSize">
+                    14
+                  </td>
+                  <td class=" noBody pxText minSize">16</td>
+                  <td class=" noBody pxText minSize">18</td>
+                </tr>
+                <tr>
+                  <th style="font-weight: 600; text-align: right;">Lc</th>
+                  <th style="font-size: 1.2em; text-align: left;">&nbsp;95</th>
+                  <td class="g4gLite2  wgt100  pxText">48.5</td>
+                  <td class="g4gFontTbl95 noBody wgt200  pxText">29</td>
+                  <td class="g4gFontTbl95 bodyText2 wgt300  pxText">20.5</td>
+                  <td class="g4gFontTbl95 bodyText2 wgt400  pxText">14.5</td>
+                  <td
+                    class="g4gFontTbl95 bodyText2  borderRight wgt500  pxText"
+                  >
+                    14
+                  </td>
+                  <td class="g4gFontTbl95 bodyText2 borderLeft wgt600  pxText">
+                    14
+                  </td>
+                  <td class="g4gFontTbl95 bodyText2 wgt700  pxText minSize">
+                    14
+                  </td>
+                  <td class=" noBody pxText minSize">16</td>
+                  <td class=" noBody pxText minSize">18</td>
+                </tr>
+                <tr>
+                  <th style="font-weight: 600; text-align: right;">Lc</th>
+                  <th style="font-size: 1.2em; text-align: left;">&nbsp;90</th>
+                  <td class="g4gLite2 g4gFontTbl90 wgt100  pxText">50</td>
+                  <td class="g4gFontTbl90 noBody wgt200  pxText">30</td>
+                  <td class="g4gFontTbl90 bodyText2 wgt300  pxText">21</td>
+                  <td class="g4gFontTbl90 bodyText2 wgt400  pxText">15</td>
+                  <td
+                    class="g4gFontTbl90 bodyText2  borderRight  wgt500  pxText"
+                  >
+                    14.5
+                  </td>
+                  <td class="g4gFontTbl90 bodyText2  borderLeft wgt600  pxText">
+                    14
+                  </td>
+                  <td class="g4gFontTbl90 bodyText2 wgt700  pxText">14</td>
+                  <td class=" noBody pxText minSize">16</td>
+                  <td class=" noBody pxText minSize">18</td>
+                </tr>
+                <tr>
+                  <th style="font-weight: 600; text-align: right;">Lc</th>
+                  <th style="font-size: 1.2em; text-align: left;">&nbsp;85</th>
+                  <td class="g4gLite2 g4gFontTbl85 wgt100  pxText">53.5</td>
+                  <td class="g4gFontTbl85 wgt200  pxText">32</td>
+                  <td class="g4gFontTbl85 bodyText2 wgt300  pxText">22</td>
+                  <td class="g4gFontTbl85 bodyText2 wgt400  pxText">16</td>
+                  <td class="g4gFontTbl85 bodyText2 borderRight wgt500  pxText">
+                    15
+                  </td>
+                  <td
+                    class="g4gFontTbl85 bodyText2   borderLeft wgt600  pxText"
+                  >
+                    14
+                  </td>
+                  <td class="empty bodyText2">14</td>
+                  <td class=" noBody pxText minSize">16</td>
+                  <td class=" noBody pxText minSize">18</td>
+                </tr>
+                <tr>
+                  <th style="font-weight: 600; text-align: right;">Lc</th>
+                  <th style="font-size: 1.2em; text-align: left;">&nbsp;80</th>
+                  <td class="g4gLite2 80 wgt100  pxText">56.5</td>
+                  <td class="g4gFontTbl80 wgt200  pxText">34</td>
+                  <td class="empty bodyText2">23</td>
+                  <td class="empty  bodyText2">17</td>
+                  <td
+                    class="g4gFontTbl80  borderRight bodyText2  wgt500  pxText"
+                  >
+                    16
+                  </td>
+                  <td class="empty  borderLeft  bodyText2">14.5</td>
+                  <td class="empty  bodyText2">14</td>
+                  <td class=" noBody pxText minSize">16</td>
+                  <td class=" noBody pxText minSize">18</td>
+                </tr>
+                <tr>
+                  <th style="font-weight: 600; text-align: right;">Lc</th>
+                  <th style="font-size: 1.2em; text-align: left;">&nbsp;75</th>
+                  <td class="g4gLite2 g4gFontTbl75 wgt100  pxText">60</td>
+                  <td class="g4gFontTbl75 wgt200  pxText">36</td>
+                  <td class="g4gFontTbl75 bodyText2 wgt300  pxText">24</td>
+                  <td class="g4gFontTbl75 bodyText2 wgt400  pxText">18</td>
+                  <td
+                    class="g4gFontTbl75 bodyText2  borderRight wgt500  pxText"
+                  >
+                    17
+                  </td>
+                  <td class="g4gFontTbl75 bodyText2  borderLeft wgt600  pxText">
+                    15
+                  </td>
+                  <td class="g4gFontTbl75 bodyText2 wgt700  pxText">14</td>
+                  <td class=" noBody pxText minSize">16</td>
+                  <td class=" noBody pxText minSize">18</td>
+                </tr>
+                <tr>
+                  <th style="font-weight: 600; text-align: right;">Lc</th>
+                  <th style="font-size: 1.2em; text-align: left;">&nbsp;70</th>
+                  <td class="g4gLite2 empty">65</td>
+                  <td class=" wgt200  pxText">39</td>
+                  <td class="g4gFontTbl70 bodyText2 wgt300  pxText">27.5</td>
+                  <td class="g4gFontTbl70 bodyText2 wgt400  pxText">19.5</td>
+                  <td
+                    class="g4gFontTbl70 bodyText2  borderRight  wgt500  pxText"
+                  >
+                    18
+                  </td>
+                  <td
+                    class="g4gFontTbl70 bodyText2  borderLeft  wgt600  pxText"
+                  >
+                    16
+                  </td>
+                  <td class="empty bodyText2">14.5</td>
+                  <td class=" noBody pxText minSize">16</td>
+                  <td class=" noBody pxText minSize">18</td>
+                </tr>
+                <tr>
+                  <th style="font-weight: 600; text-align: right;">Lc</th>
+                  <th style="font-size: 1.2em; text-align: left;">&nbsp;65</th>
+                  <td class="g4gLite2 empty">71.5</td>
+                  <td class="g4gFontTbl65 wgt200  pxText">43</td>
+                  <td class="g4gFontTbl65 bodyTextPlus2 wgt300  pxText">
+                    30.5
+                  </td>
+                  <td class="empty bodyTextPlus2">21.5</td>
+                  <td class="empty bodyTextPlus2 borderRight ">19.5</td>
+                  <td class="empty bodyTextPlus2 borderLeft ">17</td>
+                  <td class="empty bodyTextPlus2">15</td>
+                  <td class=" noBody pxText minSize">16</td>
+                  <td class=" noBody pxText minSize">18</td>
+                </tr>
+                <tr>
+                  <th style="font-weight: 600; text-align: right;">Lc</th>
+                  <th style="font-size: 1.2em; text-align: left;">&nbsp;60</th>
+                  <td class="g4gFontTbl60 g4gLite2 wgt100  pxText">80</td>
+                  <td class="g4gFontTbl60 wgt200  pxText">48</td>
+                  <td class="g4gFontTbl60 bodyTextPlus2 wgt300  pxText">34</td>
+                  <td class="g4gFontTbl60 bodyTextPlus2 wgt400  pxText">24</td>
+                  <td
+                    class="g4gFontTbl60 bodyTextPlus2  borderRight wgt500  pxText"
+                  >
+                    21
+                  </td>
+                  <td
+                    class="g4gFontTbl60 bodyTextPlus2  borderLeft wgt600  pxText"
+                  >
+                    18
+                  </td>
+                  <td class="g4gFontTbl60 bodyTextPlus2 wgt700  pxText">16</td>
+                  <td class="g4gFontTbl60 noBody pxText">16</td>
+                  <td class="g4gFontTbl60 noBody pxText ">18</td>
+                </tr>
+                <tr>
+                  <th style="font-weight: 600; text-align: right;">Lc</th>
+                  <th style="font-size: 1.2em; text-align: left;">&nbsp;55</th>
+                  <td class="g4gLite2 empty">86.5</td>
+                  <td class="g4gFontTbl55 wgt200  pxText">52</td>
+                  <td class="empty">37</td>
+                  <td class="g4gFontTbl55 bodyTextPlus2 wgt400  pxText">26</td>
+                  <td
+                    class="g4gFontTbl55 bodyTextPlus2  borderRight  wgt500  pxText"
+                  >
+                    20.5
+                  </td>
+                  <td class="empty bodyTextPlus2 borderLeft  ">18.5</td>
+                  <td class="g4gFontTbl55 bodyTextPlus2 wgt700  pxText">
+                    16.5
+                  </td>
+                  <td class="g4gFontTbl55 noBody pxText">16</td>
+                  <td class="g4gFontTbl55 noBody pxText">18</td>
+                </tr>
+                <tr>
+                  <th style="font-weight: 600; text-align: right;">Lc</th>
+                  <th style="font-size: 1.2em; text-align: left;">&nbsp;50</th>
+                  <td class="nonText2">92.5</td>
+                  <td class="empty">58</td>
+                  <td class="g4gFontTbl50 wgt300  pxText">41</td>
+                  <td class="g4gFontTbl50 bodyTextPlus2 wgt400  pxText">29</td>
+                  <td class="g4gFontTbl50 bodyTextPlus2  wgt500  pxText">22</td>
+                  <td
+                    class="g4gFontTbl50 bodyTextPlus2  borderLeft  wgt600  pxText"
+                  >
+                    20
+                  </td>
+                  <td class="empty bodyTextPlus2">17.5</td>
+                  <td class="empty">16.5</td>
+                  <td class="empty">18</td>
+                </tr>
+                <tr>
+                  <th style="font-weight: 600; text-align: right;">Lc</th>
+                  <th style="font-size: 1.2em; text-align: left;">&nbsp;45</th>
+                  <td class="nonText2 wgt100  pxText">120</td>
+                  <td class="g4gFontTbl45 45 wgt200  pxText">72</td>
+                  <td class="g4gFontTbl45 wgt300  pxText">51</td>
+                  <td class="g4gFontTbl45 bodyTextPlus2 wgt400  pxText">36</td>
+                  <td
+                    class="g4gFontTbl45 bodyTextPlus2  borderRight  wgt500  pxText"
+                  >
+                    27
+                  </td>
+                  <td
+                    class="g4gFontTbl45 bodyTextPlus2  borderLeft  wgt600  pxText"
+                  >
+                    23.5
+                  </td>
+                  <td class="g4gFontTbl45 bodyTextPlus2 wgt700  pxText">20</td>
+                  <td class="g4gFontTbl45 noBody pxText">18</td>
+                  <td class="g4gFontTbl45 noBody pxText">18</td>
+                </tr>
+                <tr>
+                  <th style="font-weight: 600; text-align: right;">Lc</th>
+                  <th style="font-size: 1.2em; text-align: left;">&nbsp;40</th>
+                  <td class="nonText2">160</td>
+                  <td class="nonText2">96</td>
+                  <td class="g4gFontTbl40 wgt300  pxText">68</td>
+                  <td class="g4gFontTbl40 wgt400  pxText">48</td>
+                  <td class="g4gFontTbl40  borderRight  wgt500  pxText">34</td>
+                  <td class="g4gFontTbl40 borderLeft  wgt600  pxText">29</td>
+                  <td class="g4gFontTbl40  wgt700  pxText">24</td>
+                  <td class="g4gFontTbl40 noBody pxText">19</td>
+                  <td class="g4gFontTbl40 noBody pxText">18</td>
+                </tr>
+                <tr>
+                  <th style="font-weight: 600; text-align: right;">Lc</th>
+                  <th style="font-size: 1.2em; text-align: left;">&nbsp;35</th>
+                  <td class="nonText2">220</td>
+                  <td class="nonText2">132</td>
+                  <td class="g4gFontTbl35 wgt300  pxText">93.5</td>
+                  <td class="g4gFontTbl35 wgt400  pxText">66</td>
+                  <td class="g4gFontTbl35  borderRight wgt500  pxText">46.5</td>
+                  <td class="g4gFontTbl35 borderLeft wgt600  pxText">40</td>
+                  <td class="g4gFontTbl35 wgt700  pxText">33</td>
+                  <td class="g4gFontTbl35  pxText">26.5</td>
+                  <td class="g4gFontTbl35  pxText">20</td>
+                </tr>
+                <tr>
+                  <th style="font-weight: 600; text-align: right;">Lc</th>
+                  <th style="font-size: 1.2em; text-align: left;">&nbsp;30</th>
+                  <td class="nonText2">320</td>
+                  <td class="nonText2">192</td>
+                  <td class="g4gFontTbl30  wgt300  pxText">135</td>
+                  <td class="g4gFontTbl30  wgt400  pxText">96</td>
+                  <td class="g4gFontTbl30  borderRight  wgt500  pxText">68</td>
+                  <td class="g4gFontTbl30 borderLeft wgt600  pxText">58</td>
+                  <td class="g4gFontTbl30  wgt700  pxText">48</td>
+                  <td class="g4gFontTbl30  pxText">38.5</td>
+                  <td class="g4gFontTbl30  pxText">29</td>
+                </tr>
+                <tr>
+                  <th
+                    colspan="11"
+                    class="tableTitle"
+                    style="height: 0.75em; font-size: 0.5em; font-weight: 300;"
+                  >
+                    Copyright © 2022 by Myndex Research. All Right Reserved.
+                  </th>
+                </tr>
+              </table>
+            </div>
+            <ul>
+              <li>
+                Values shown are for common sans-serif fonts (e.g., Helvetica,
+                Arial, Verdana, Montserrat, Roboto, Calibri, Trebuchet).
+              </li>
+              <li>
+                Many serif fonts should use values for the row above (e.g.,
+                Times, Georgia, Cambria, Courier), and especially should be
+                compared in terms of x-height.
+              </li>
+              <li>
+                Decorative, unusual, and very thin fonts should be avoided for
+                fluently readable text and especially columns of body text.
+              </li>
+              <li>
+                Due to the vast variety of font designs, designers should
+                visually compare an unusual font to a standard font such as
+                Helvetica, using the size and weight of Helvetica that most
+                closesly matches the appearance of the tested font as a guide.
+              </li>
+              <li>
+                Designers are cautioned that bypassing default font smoothing
+                can drastically reduce contrast for small or thin fonts. For
+                instance, the use of "-webkit-font-smoothing: antialiasing" is
+                strongly discouraged.
+              </li>
+            </ul>
+          </details>
+        </section>
 
-      <hr class="clb mb0" style="" />
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-      ></script>
-      <ins
-        class="adsbygoogle"
-        style="display:block; text-align:center;"
-        data-ad-layout="in-article"
-        data-ad-format="fluid"
-        data-ad-client="ca-pub-8528204478975741"
-        data-ad-slot="8819425657"
-      >
-      </ins>
-      <script async>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+        <!-- ********    Close Guidlines Section     ********    -->
 
-      <hr class="clb mt0" style="" />
-
-      <section id="apca-science" class="explainer">
-        <details>
-          <summary>
-            <span class="twistUp">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="36px"
-                viewBox="0 0 24 24"
-                width="36px"
-                fill="none"
+        <section id="apca-science" class="explainer">
+          <details>
+            <summary>
+              <span class="twistUp">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="30px"
+                  viewBox="0 0 24 24"
+                  width="36px"
+                  fill="none"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8m0-2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13l-4-4h8z"
+                    stroke="#34028b"
+                    fill="#230167"
+                  />
+                </svg>
+              </span>
+              <h3
+                class="Luv275 fw6 h3Query"
+                id="the-accessible-perceptual-contrast-algorithm"
               >
-                <path d="M0 0h24v24H0V0z" fill="none" />
-                <path
-                  d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8m0-2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13l-4-4h8z"
-                  stroke="#34028b"
-                  fill="#230167"
-                />
-              </svg>
-            </span>
-            <h2
-              class="mastHead h1Query"
+                The Accessible Perceptual Contrast Algorithm
+              </h3>
+            </summary>
+
+            <p>
+              APCA is a new method for calculating and predicting readability
+              contrast. APCA is a part of the larger S-Luv Accessible
+              Readability Color Appearance Model known as SARCAM (formerly
+              SAPC). These models are specifically related to color appearance
+              on self-illuminated RGB computer displays &amp; devices, and also
+              for modeling accessible user needs, with a focus on readability.
+            </p>
+
+            <h3 class="h3Query" style="" id="lightness-contrast">
+              Lightness contrast L<sup>c</sup>
+            </h3>
+
+            <p>
+              The APCA generates a contrast value based on a color pair, and
+              this value is perceptually based: that is, regardless of how light
+              or dark the colors are, a contrast value of Lc&nbsp;60 represents
+              the same <em>perceived</em> readability contrast. This is
+              absolutely not the case with WCAG&nbsp;2.x, which far overstates
+              contrast for dark colors to the point that 4.5:1 can be
+              functionally unreadable when a color is near black. As a result,
+              WCAG&nbsp;2.x contrast cannot be used for guidance designing
+              &quot;dark mode&quot;.
+            </p>
+            <p>
+              The APCA contrast value is perceptually uniform, and pivots near
+              the point where the CS curve flattens due to contrast constancy.
+              Halving or doubling the APCA value relates to a halving or
+              doubling of the perceived contrast. There is a subtle weighting
+              for higher contrasts to smaller, thinner fonts.
+            </p>
+
+            <h3
+              class="h3Query"
               style=""
-              id="the-accessible-perceptual-contrast-algorithm"
+              id="different-uses-different-contrasts"
             >
-              The Accessible Perceptual Contrast Algorithm
-            </h2>
-          </summary>
-
-          <p>
-            APCA is a new method for calculating and predicting readability
-            contrast. APCA is a part of the larger S-Luv Accessible Readability
-            Color Appearance Model known as SARCAM (formerly SAPC). These models
-            are specifically related to color appearance on self-illuminated RGB
-            computer displays &amp; devices, and also for modeling accessible
-            user needs, with a focus on readability.
-          </p>
-
-          <h3 class="h3Query" style="" id="lightness-contrast">
-            Lightness contrast L<sup>c</sup>
-          </h3>
-
-          <p>
-            The APCA generates a contrast value based on a color pair, and this
-            value is perceptually based: that is, regardless of how light or
-            dark the colors are, a contrast value of Lc&nbsp;60 represents the
-            same <em>perceived</em> readability contrast. This is absolutely not
-            the case with WCAG&nbsp;2.x, which far overstates contrast for dark
-            colors to the point that 4.5:1 can be functionally unreadable when a
-            color is near black. As a result, WCAG&nbsp;2.x contrast cannot be
-            used for guidance designing &quot;dark mode&quot;.
-          </p>
-          <p>
-            The APCA contrast value is perceptually uniform, and pivots near the
-            point where the CS curve flattens due to contrast constancy. Halving
-            or doubling the APCA value relates to a halving or doubling of the
-            perceived contrast. There is a subtle weighting for higher contrasts
-            to smaller, thinner fonts.
-          </p>
-
-          <h3 class="h3Query" style="" id="different-uses-different-contrasts">
-            Different Uses, Different Contrasts
-          </h3>
-          <p>
-            The APCA has a set of levels related to use cases — for instance,
-            Lc&nbsp;90 is <em>preferred</em> and Lc&nbsp;75 is the
-            <em>minimum</em> for body text. This makes for an easy way to use
-            ACPA, very similar to 1.4.3 in terms of ease of use.
-          </p>
-          <p>
-            The APCA also has an <strong>optional</strong> lookup table to
-            associate font size and weight to the readability contrast
-            (Lc&nbsp;value). The lookup tables allow for even greater accuracy
-            and therefore greater flexibility in design.
-          </p>
-
-          <h3 class="h3Query" style="" id="failing-pass-fail">
-            Failing Pass/Fail
-          </h3>
-          <p>
-            A key takeaway is that a strict pass/fail with a blanket contrast
-            ratio is not instructive as a guideline, and does not necessarily
-            solve a given user need. In fact, user needs when it comes to
-            contrast are conflicting—what is good for one can be harmful to
-            another. This is even true of font size.
-          </p>
-          <p>
-            This points to the importance of real user personalization, an area
-            where the technology is literally missing (and a work in progress).
-            For the guidelines though, we can set ranges for targets and
-            expectations toward making the web readable for all.
-          </p>
-        </details>
-        <hr />
-        <details>
-          <summary>
-            <span class="twistUp">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="36px"
-                viewBox="0 0 24 24"
-                width="36px"
-                fill="none"
-              >
-                <path d="M0 0h24v24H0V0z" fill="none" />
-                <path
-                  d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8m0-2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13l-4-4h8z"
-                  stroke="#34028b"
-                  fill="#230167"
-                />
-              </svg>
-            </span>
-            <h2 class="h2Query" style="color: #308;">
-              The Science Behind SAPC/APCA
-            </h2>
-          </summary>
-          <h3 class="h3Query" style="text-align: center;">
-            <b>A</b>ccessible <b>P</b>erceptual <b>C</b>ontrast <b>A</b>lgorithm
-          </h3>
-
-          <div>
-            <p class="dropCapSimple">
-              For a brief overview and explanation of the SAPC math and methods,
-              take a look at
-              <a id="null02" href="/WEB/WCAG_CE17polarity"
-                >Experiment Results CE17</a
-              >, one of the polarity experiments. The discussion includes graphs
-              comparing SAPC to other contrast methods, and related discussions.
-            </p>
-            <p>
-              Also, as spatial frequency is one of the most important predictors
-              of contrast perception and readability, see
-              <a id="null03" href="/WEB/WCAG_CE14weight"
-                >Experiment Results CE14-weight</a
-              >
-              for further explanations.
-            </p>
-            <p>
-              <span class="fw6">The "TL;DR" is:</span> like all human
-              perceptions, color and contrast are extremely context dependent.
-              In terms of readability, there is a "critical contrast" level, and
-              that level is more dependent on spatial frequency, which relates
-              to font weight, than a given color pair.
-            </p>
-            <p>
-              To accurately predict contrast perception, the Spatial
-              <em>(font weight &amp; size)</em>, color
-              <em
-                >(perceived lightness difference between text and
-                background)</em
-              >, and context
-              <em
-                >(ambient light, surroundings, intended purpose of the text)</em
-              >
-              all need to be taken into account.
-            </p>
-            <h3 class="h3Query" style="text-align: center;">
-              What is the Contrast of This Page?
+              Different Uses, Different Contrasts
             </h3>
             <p>
-              Most of this page is set at over 120 in "old" APCA numbers, which
-              now is approximately <span class="Lc">L<sup>c</sup> </span>90. To
-              help differentiate between dark text on a light background and
-              light text on dark, the math reports the latter as a negative
-              value. But for purposes of the font lookup table, ignore the minus
-              sign and use the absolute value.
+              The APCA has a set of levels related to use cases — for instance,
+              Lc&nbsp;90 is <em>preferred</em> and Lc&nbsp;75 is the
+              <em>minimum</em> for body text. This makes for an easy way to use
+              ACPA, very similar to 1.4.3 in terms of ease of use.
             </p>
-          </div>
-        </details>
-      </section>
-      <!-- ********    Close Science Links Section     ********    -->
-      <div class="m15" style="">
-        <a
-          id="null04"
-          href="/WEB/Perception"
-          aria-label="Go Back to Percepton Experiments"
-        >
-          <button
-            class="myndexButton queryButton m20 fll"
-            style="min-width: 510px; max-height: 80px;"
-          >
-            <div
-              class="fll"
-              style="padding: 0.1em 4px; font-family: 'Palatino', 'Georgia','Bookman', 'Times New Roman','Times','serif'; letter-spacing: 0.01em; line-height: 0.2; font-size: 2em; font-style: normal;"
-            >
-              &Delta;&gamma; &nbsp;
-            </div>
-            Myndex Perception Research Experimental Results Listing
-          </button>
-        </a>
+            <p>
+              The APCA also has an <strong>optional</strong> lookup table to
+              associate font size and weight to the readability contrast
+              (Lc&nbsp;value). The lookup tables allow for even greater accuracy
+              and therefore greater flexibility in design.
+            </p>
 
-        <a
-          id="null05"
-          href="/CVD/"
-          aria-label="Go Back to Percepton Experiments"
-        >
-          <button
-            class="myndexButton queryButton m20 flr"
-            style="padding: 0.3em;"
-          >
-            <img
-              class="fll "
-              role="presentation"
-              alt="icon"
-              style="margin: 0.3em; padding: 0"
-              src="/CVD/faviconMasterSmall.jpg"
-              height="40"
-            />
-            <div class="flr" style="margin: 0.3em; padding:0;">
-              Myndex&nbsp;Color&nbsp;Vision <br />Deficiency&nbsp;Simulator
+            <h3 class="h3Query" style="" id="failing-pass-fail">
+              Failing Pass/Fail
+            </h3>
+            <p>
+              A key takeaway is that a strict pass/fail with a blanket contrast
+              ratio is not instructive as a guideline, and does not necessarily
+              solve a given user need. In fact, user needs when it comes to
+              contrast are conflicting—what is good for one can be harmful to
+              another. This is even true of font size.
+            </p>
+            <p>
+              This points to the importance of real user personalization, an
+              area where the technology is literally missing (and a work in
+              progress). For the guidelines though, we can set ranges for
+              targets and expectations toward making the web readable for all.
+            </p>
+          </details>
+          <details>
+            <summary>
+              <span class="twistUp">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="30px"
+                  viewBox="0 0 24 24"
+                  width="36px"
+                  fill="none"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8m0-2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13l-4-4h8z"
+                    stroke="#34028b"
+                    fill="#230167"
+                  />
+                </svg>
+              </span>
+              <h3 class="Luv275 fw6 h3Query">
+                The Science Behind SAPC/APCA
+              </h3>
+            </summary>
+            <h3 class="h3Query">
+              <b>A</b>ccessible <b>P</b>erceptual <b>C</b>ontrast
+              <b>A</b>lgorithm
+            </h3>
+
+            <div>
+              <p>
+                For a brief overview and explanation of the SAPC math and
+                methods, take a look at
+                <a id="null02" href="/WEB/WCAG_CE17polarity"
+                  >Experiment Results CE17</a
+                >, one of the polarity experiments. The discussion includes
+                graphs comparing SAPC to other contrast methods, and related
+                discussions.
+              </p>
+              <p>
+                Also, as spatial frequency is one of the most important
+                predictors of contrast perception and readability, see
+                <a id="null03" href="/WEB/WCAG_CE14weight"
+                  >Experiment Results CE14-weight</a
+                >
+                for further explanations.
+              </p>
+              <p>
+                <span class="fw6">The "TL;DR" is:</span> like all human
+                perceptions, color and contrast are extremely context dependent.
+                In terms of readability, there is a "critical contrast" level,
+                and that level is more dependent on spatial frequency, which
+                relates to font weight, than a given color pair.
+              </p>
+              <p>
+                To accurately predict contrast perception, the Spatial
+                <em>(font weight &amp; size)</em>, color
+                <em
+                  >(perceived lightness difference between text and
+                  background)</em
+                >, and context
+                <em
+                  >(ambient light, surroundings, intended purpose of the
+                  text)</em
+                >
+                all need to be taken into account.
+              </p>
+              <h3 class="h3Query" style="text-align: center;">
+                What is the Contrast of This Page?
+              </h3>
+              <p>
+                Most of this page is set at over 120 in "old" APCA numbers,
+                which now is approximately
+                <span class="Lc">L<sup>c</sup> </span>90. To help differentiate
+                between dark text on a light background and light text on dark,
+                the math reports the latter as a negative value. But for
+                purposes of the font lookup table, ignore the minus sign and use
+                the absolute value.
+              </p>
             </div>
-          </button>
-        </a>
-        <div class="clearfix">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          </details>
+        </section>
       </div>
 
-      <hr class="clb mt0" style="" />
-      <div class="gammaContainer" style="Margin: 0;">
-        <details>
+      <div class="innerwrapper sciencelinks">
+        <a
+          href="/WEB/Perception"
+          aria-label="Go Back to Percepton Experiments"
+          class="myndexButton queryButton"
+          style="min-width: 510px; max-height: 80px;"
+        >
+          <div
+            class="fll"
+            style="height:40px;padding: 15px 4px; font-family: 'Palatino', 'Georgia','Bookman', 'Times New Roman','Times','serif'; letter-spacing: 0.01em; line-height: 0.2; font-size: 2em; font-style: normal;"
+          >
+            &Delta;&gamma; &nbsp;
+          </div>
+          Myndex Perception Research Experimental Results Listing
+        </a>
+
+        <a
+          href="/CVD/"
+          aria-label="Go Back to Percepton Experiments"
+          class="myndexButton queryButton"
+          style="padding: 0.3em;overflow:hidden"
+        >
+          <img
+            class="fll"
+            role="presentation"
+            alt="icon"
+            style="margin: 0.3em; padding: 0;border-radius:40px;"
+            src="https://myndex.com/CVD/faviconMasterSmall.jpg"
+            height="40"
+          />
+          <div class="flr" style="margin: 0.3em; padding:0;">
+            Myndex&nbsp;Color&nbsp;Vision <br />Deficiency&nbsp;Simulator
+          </div>
+        </a>
+      </div>
+
+      <div class="gammaContainer">
+        <details class="innerwrapper">
           <summary>
             <span class="twistUp">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                height="36px"
+                height="30px"
                 viewBox="0 0 24 24"
                 width="36px"
                 fill="none"
@@ -1745,7 +1715,7 @@ The content on this page is PROPRIETARY AND NOT LICENSED FOR FURTHER USE. -->
                 />
               </svg>
             </span>
-            <h2 class=" tal ml25 cW">MONITOR GAMMA CHECK</h2>
+            <h2 class=" tal ml25 cW">Monitor gamma check</h2>
           </summary>
 
           <div class=" centered gamma " style="">
@@ -1814,44 +1784,10 @@ The content on this page is PROPRIETARY AND NOT LICENSED FOR FURTHER USE. -->
           </div>
         </details>
       </div>
-
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-      ></script>
-      <ins
-        class="adsbygoogle"
-        style="display:block; text-align:center;"
-        data-ad-layout="in-article"
-        data-ad-format="fluid"
-        data-ad-client="ca-pub-8528204478975741"
-        data-ad-slot="8819425657"
-      >
-      </ins>
-      <script async>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-
-      <footer>
-        <a
-          id="null06"
-          href="/CVD/"
-          aria-label="Go to the Color Vision Simulator"
-        >
-          <button class="myndexButton flr mr20 fs10">
-            <img
-              class="fll "
-              style="margin: 0 0.6em 0 0; padding: 0"
-              src="/CVD/faviconMasterSmall.jpg"
-              height="60"
-            />
-            <div class="flr " style="margin: 0.2em; padding:0;">
-              Myndex&nbsp;Color&nbsp;Vision <br />Deficiency&nbsp;Simulator
-            </div>
-          </button>
-        </a>
-
-        <div style="font-size: 12px;">
+    </main>
+    <footer class="fs07">
+      <div class="innerwrapper">
+        <div>
           Copyright &copy; 2019 – 2022 by Andrew Somers. All Rights Reserved.
           <br />
           <b>
@@ -1862,7 +1798,9 @@ The content on this page is PROPRIETARY AND NOT LICENSED FOR FURTHER USE. -->
           <a href="https://github.com/Myndex/SAPC-APCA/"
             >https://github.com/Myndex/SAPC-APCA/</a
           >
-          <br />
+        </div>
+
+        <div>
           This project is part of the
           <a
             href="https://www.myndex.com/WEB/Perception"
@@ -1870,18 +1808,17 @@ The content on this page is PROPRIETARY AND NOT LICENSED FOR FURTHER USE. -->
           >
             Myndex Web Perception Experiment.
           </a>
-        </div>
 
-        <div class="copyright fs07 lh10">
-          Copyright &copy; 2019 – 2022 by MTI. All Rights Reserved. •<br />
-          <i>
-            "Myndex" and the Myndex Eye Logo are trademarks of Myndex
-            Technologies.
-          </i>
-          <br />
+          <div class="copyright">
+            Copyright &copy; 2019 – 2022 by MTI. All Rights Reserved. •<br />
+            <i>
+              "Myndex" and the Myndex Eye Logo are trademarks of Myndex
+              Technologies.
+            </i>
+          </div>
         </div>
-      </footer>
-    </main>
+      </div>
+    </footer>
     <script src="JS/footerscript.js"></script>
   </body>
 </html>

@@ -1,0 +1,89 @@
+.wrapper {
+  padding-top: 4rem;
+}
+
+.contrastChart.pie {
+  margin: 3rem auto 0;
+}
+
+.conformScore #tableScore4 td {
+  padding: 1rem 0.5rem 0;
+  vertical-align: top;
+  text-align: left;
+}
+.innerwrapper {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.infobox {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 4rem 0 2rem;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.infobox div {
+  flex: 1 1 45%;
+}
+.infobox p {
+  margin: 0;
+}
+
+.sciencelinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.sciencelinks a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+}
+.gammaContainer {
+  padding: 1rem;
+}
+
+.explainers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 4rem auto;
+  gap: 4rem;
+  padding: 0;
+  max-width: 1024px;
+}
+
+.explainer h2 {
+  font-size: 1.5rem;
+}
+.explainer h3 {
+  font-size: 1.25rem;
+}
+
+.betanotice {
+  padding: 20px;
+  background: #eee;
+}
+.betanotice h3 {
+  margin: 0;
+}
+
+#demoArea {
+  text-align: center;
+}
+
+
+footer .innerwrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+footer .innerwrapper div {
+  flex: 1 1 45%;
+}

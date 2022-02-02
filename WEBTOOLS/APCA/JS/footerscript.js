@@ -115,7 +115,7 @@ let tableScore4 = document.getElementById("tableScore4");
 let modeColspan = normalColspan;
 
 if (mode === "simple") {
-  tableScore4.style = "height: 120px; max-height: 120px;";
+  tableScore4.style = "height: 150px; max-height: 150px;";
 }
 
 const scoreTextArray = [
@@ -624,7 +624,7 @@ function testContrast(midAdjust = false) {
 
       if (mode === "simple") {
         tableScoreDOMarray[4].innerHTML =
-          '<th style="border-radius: 12px 36px 36px 12px;">' +
+          '<th>' +
           scoreTextArray[0] +
           "</th>" +
           loConWarningRow9x1s();
@@ -722,7 +722,7 @@ function testContrast(midAdjust = false) {
         w = 2;
         modeWeightArrayLen = 8;
         rowString =
-          '<th style="border-radius: 12px 36px 36px 12px;" >' +
+          '<th>' +
           scoreTextArraySimple[s] +
           "</th>";
       } else if (mode === "mobile") {
@@ -793,7 +793,7 @@ function testContrast(midAdjust = false) {
                   BG.hex() +
                   "; border-width:" +
                   w * 2 +
-                  "px; border-radius: 24px; border-color:#" +
+                  "px; border-color:#" +
                   TXT.hex() +
                   "; " +
                   nonTextBorder +
@@ -811,7 +811,7 @@ function testContrast(midAdjust = false) {
                   BG.hex() +
                   "; border-width:" +
                   w * 2 +
-                  "px; border-radius: 36px; border-color:#" +
+                  "px; border-color:#" +
                   TXT.hex() +
                   "; " +
                   nonTextBorder +
@@ -829,14 +829,14 @@ function testContrast(midAdjust = false) {
                   BG.hex() +
                   ';">' +
                   minFontTemp +
-                  "px <br>" +
+                  "px <br><br>" +
                   minimumText +
                   "</td>")
               : tempFont > 400
               ? (rowString +=
                   "<td " +
                   modeColspan +
-                  ' style="display:inline-block; padding: 8px 0 0;font-size:' +
+                  ' style="font-size:' +
                   minFontTemp +
                   "px; font-weight:" +
                   weightArray[w] +
@@ -848,7 +848,7 @@ function testContrast(midAdjust = false) {
                   (1.0 + w * 0.0456).toString() +
                   ';">' +
                   minFontTemp +
-                  "px " +
+                  "px <br><br>" +
                   minimumText +
                   "<br>" +
                   sampleBodyText +
@@ -867,7 +867,7 @@ function testContrast(midAdjust = false) {
                   "; background-color:#" +
                   BG.hex() +
                   '; line-height: 0.75; overflow:hidden">&amp;' +
-                  '<div style="position:absolute; bottom: 24px; border-radius: 0 4px 4px 6px; margin: -32px auto 0; padding:2px 6px 2px 12px; font-size: 16px; font-weight: 600; color:#' +
+                  '<div style="position:absolute; bottom: 24px; margin: -32px auto 0; padding:2px 6px 2px 12px; font-size: 16px; font-weight: 600; color:#' +
                   scoreColor[s] +
                   '; background-color: #eee;">' +
                   tempFont +
@@ -919,14 +919,14 @@ function testContrast(midAdjust = false) {
                   BG.hex() +
                   '; line-height: 1.0;">' +
                   tempFont +
-                  "px<br>" +
+                  "px<br><br>" +
                   sampleText +
                   "</td>")
               : // Sample Text Body Sample
                 (rowString +=
                   "<td " +
                   modeColspan +
-                  ' style="display:inline-block;padding: 6px 0 0; font-size:' +
+                  ' style="font-size:' +
                   tempFont +
                   "px; font-weight:" +
                   weightArray[w] +
@@ -939,7 +939,7 @@ function testContrast(midAdjust = false) {
                   ';">' +
                   // + (2.2 - tempFont * 0.04) + ';">'
                   tempFont +
-                  "px<br>" +
+                  "px<br><br>" +
                   sampleBodyText +
                   "</td>");
         } // end switch
