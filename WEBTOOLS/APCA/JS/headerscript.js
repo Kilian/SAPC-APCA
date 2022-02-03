@@ -54,10 +54,6 @@ function getCSScolor(sRGBstrg, type) {
       case "BG":
         BG = thisColor;
 
-        //  Clear Error warning colors
-        inputBG.style.backgroundColor = "#DFA";
-        BGpickerWrap.style.backgroundColor = "#808080";
-
         // Set the input element and result element values to match
         inputBG.value = thisColor.cleaned;
         BGpicker.value = thisColor.hexNoA();
@@ -72,10 +68,6 @@ function getCSScolor(sRGBstrg, type) {
 
       case "TXT":
         TXT = thisColor;
-
-        //  Clear Error warning colors
-        inputTXT.style.backgroundColor = "#DFA";
-        TXTpickerWrap.style.backgroundColor = "#808080";
 
         // Set the input element and result element values to match
         inputTXT.value = thisColor.cleaned;

@@ -66,7 +66,7 @@ body {
   line-height: 1.5;
   font-family: system-ui, sans-serif;
   font-size: 1rem;
-  background: rgb(255, 255, 255);
+  background: #e6e2db;
 }
 
 main {
@@ -1087,10 +1087,7 @@ div.overflowScroll {
   position: relative;
   font-size: 1em;
   text-align: center;
-  border-collapse: separate;
-  border-spacing: 7px;
-}
-.conformScore tr {
+  border-collapse: collapse;
 }
 .conformScore th {
   font-size: 1.2em;
@@ -1179,7 +1176,7 @@ div.overflowScroll {
 }
 
 .conformScore tr:nth-child(3) th {
-  padding: 5rem 0 0;
+  padding: 5rem 0 1rem;
   font-size: 1rem;
 }
 
@@ -1661,7 +1658,7 @@ input {
   font-size: 24px;
   font-weight: 400;
   color: #123;
-  background-color: #eea;
+  background-color: #fff;
   border: 1px solid #40b;
 }
 
@@ -1670,20 +1667,17 @@ input {
   font-size: 32px;
   font-weight: 400;
   color: #123;
-  background-color: #77f;
   border: 1px solid #40b;
 }
 input:focus {
   border-color: #66f;
   color: #123;
-  background-color: #ffd;
 }
 
 #inputTXT:focus,
 #inputBG:focus {
   border-color: #66f;
   color: #123;
-  background-color: #0fa;
 }
 
 .textInput,
@@ -1720,21 +1714,6 @@ input[type="color"] {
   margin: 8% 10%;
   padding: 6% 10%;
   border: none;
-}
-
-#BGpicker,
-#TXTpicker {
-  appearance: none;
-  position: absolute;
-  display: block;
-  inset: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  margin: 0;
-}
-#TXTpicker {
 }
 
 #BGresult-wrap,
@@ -3056,10 +3035,8 @@ th.scoreHeader {
   font-size: inherit !important;
   font-weight: inherit;
 }
-.weightWord::before {
-  content: " • ";
-}
-
+.weightWord::before {content: "("}
+.weightWord::after {content: ")"}
 /* These must be after the inputs */
 
 #BGresult,
