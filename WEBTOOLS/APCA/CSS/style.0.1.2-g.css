@@ -1210,7 +1210,6 @@ div.overflowScroll {
 .conformScore .weightHeader th.weight2 {
   font-weight: 200;
   background-color: #f7f7f7;
-  border: 1px solid #e6e6e6;
 }
 .conformScore .weightHeader th.weight3 {
   font-weight: 300;
@@ -1283,13 +1282,7 @@ div.overflowScroll {
   font-weight: 500;
   line-height: 1;
 }
-.conformScore tr:nth-child(4) th:nth-child(1) {
-  color: #126;
-  background-color: #fff;
-}
 .conformScore .notApplicable {
-  font-family: Poppins, Barlow, Kanit, sans-serif;
-  font-family: "Work Sans", "Fira Sans", sans-serif;
   font-family: Barlow, Poppins, sans-serif;
 
   font-size: 1.3em;
